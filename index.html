@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black Financial Freedom</title>
 
     <!-- Google Fonts -->
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900%7COpen%20Sans:100,200,300,400,500,600,700,800,900%7CMontserrat:100,200,300,400,500,600,700,800,900%7CRoboto:100,200,300,400,500,600,700,800,900%7CPoppins:100,200,300,400,500,600,700,800,900%7CMerriweather:100,200,300,400,500,600,700,800,900%7CAbyssinica%20SIL:100,200,300,400,500,600,700,800,900%7CAlegreya%20SC:100,200,300,400,500,600,700,800,900&amp;display=swap"
+        href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900%7COpen%20Sans:100,200,300,400,500,600,700,800,900%7CMontserrat:100,200,300,400,500,600,700,800,900%7CRoboto:100,200,300,400,500,600,700,800,900%7CPoppins:100,200,300,400,500,600,700,800,900%7CMerriweather:100,200,300,400,500,600,700,800,900%7CAbyssinica%20SIL:100,200,300,400,500,600,700,800,900%7CAlegreya%20SC:100,200,300,400,500,600,700,800,900&display=swap"
         media="all" onload="this.media='all'" />
 
     <link rel="stylesheet" href="style.css" />
-    <title>Black Financial Freedom</title>
 </head>
 
 <body>
@@ -20,22 +20,38 @@
             <img src="logo.webp" alt="Black Financial Freedom Logo" />
         </div>
         <nav>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
+            <a href="index.html" data-i18n="nav_home">HOME</a>
+            <a href="about.html" data-i18n="nav_about">ABOUT US</a>
+            <a href="join.html" data-i18n="nav_join">JOIN OUR TEAM</a>
+            <a href="services.html" data-i18n="nav_services">SERVICES</a>
+            <a href="contact.html" class="contact-button" data-i18n="nav_contact">CONTACT US</a>
         </nav>
+
+        <div class="language-selector">
+            <button class="lang-btn">
+                <img id="current-flag" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/330px-Flag_of_the_United_States.svg.png" alt="English" class="flag-icon" />
+                <span id="current-lang">EN</span> <span class="arrow">▼</span>
+            </button>
+            <div class="dropdown">
+                <a href="#" onclick="setLanguage('en')">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/330px-Flag_of_the_United_States.svg.png" alt="English" class="flag-icon" />
+                    English
+                </a>
+                <a href="#" onclick="setLanguage('pt')">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png" alt="Portuguese" class="flag-icon" />
+                    Portuguese
+                </a>
+            </div>
+        </div>
+
     </header>
 
     <!-- Top Box Section -->
     <section class="top-box">
         <div class="top-box-content">
             <div class="top-box-text">
-                <h2>We help people protect their families and grow their financial wealth and get the most out of their
-                    RICH LIFE!</h2>
-                <p>
-                    Spend confidently on the things you love, and cut back on the things you don't. Discover the peace
-                    of mind that comes with having the right financial plan in place.
-                </p>
+                <h2 data-i18n="top_heading"></h2>
+                <p data-i18n="top_paragraph"></p>
             </div>
             <div class="top-box-image">
                 <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/vF7iXBz1wuIoxInJcR6C/media/6790277f058d4fd40e16e5b9.jpeg"
@@ -51,57 +67,163 @@
                     alt="Family Financial Protection" />
             </div>
             <div class="white-right">
-                <h2>Build a Solid Foundation!</h2>
-                <p>Our modern financial solutions provide protection, security, and peace of mind for individuals and
-                    their loved ones.</p>
-                <p>Contact us today to get started.</p>
-                <p>At Black Financial Freedom Consulting, we specialize in securing the financial futures of
-                    middle-class families through living benefits insurance and strategic retirement planning via
-                    indexed accounts. Our mission is rooted in helping individuals achieve financial freedom while
-                    safeguarding their loved ones from financial uncertainty!</p>
-                    <img class="logo-under" src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/vF7iXBz1wuIoxInJcR6C/media/679ade949dbb3731f2070f3a.png" alt="Logo Under Image" class="fade-up" />
+                <h2 data-i18n="build_heading"></h2>
+                <p data-i18n="build_paragraph1"></p>
+                <h3 data-i18n="build_contact_heading"></h3>
+                <p data-i18n="build_paragraph2"></p>
+                <img class="logo-under"
+                    src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/vF7iXBz1wuIoxInJcR6C/media/679ade949dbb3731f2070f3a.png"
+                    alt="Logo Under Image" />
             </div>
         </div>
     </section>
 
-    <section id="services" class="services">
-        <h2 class="section-title">Our Services</h2>
-        <ul>
-            <li>Credit Repair and Education</li>
-            <li>Business Credit Setup</li>
-            <li>Personal Financial Coaching</li>
-            <li>Investment Strategy Planning</li>
-            <li>Workshops and Webinars</li>
-        </ul>
-        <button class="btn">Book a Consultation</button>
+    <section class="black-box">
+        <div class="black-box-content">
+            <h2 data-i18n="vision_heading"></h2>
+            <hr class="gold-line" />
+            <p data-i18n="vision_paragraph1"></p>
+            <h3 data-i18n="vision_join_heading"></h3>
+            <hr class="gold-line" />
+            <p data-i18n="vision_paragraph2"></p>
+            <a href="about.html" class="learn-more-btn" data-i18n="learn_more_btn">Learn More</a>
+        </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2 class="section-title">Contact Us</h2>
-        <p>Email: info@blackfinancialfreedom.com</p>
-        <p>Phone: (123) 456-7890</p>
-        <p>Follow us on social media for updates and tips!</p>
+    <section class="white-callout">
+        <h2 data-i18n="callout_heading"></h2>
+        <hr class="gold-line" />
+        <p data-i18n="callout_paragraph"></p>
+        <a href="contact.html" class="callout-btn" data-i18n="callout_button">Contact Us</a>
     </section>
 
-    <footer>
-        &copy; 2025 Black Financial Freedom. All rights reserved.
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 data-i18n="footer_company">Company</h3>
+                <ul>
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
+                    <li><a href="join.html" data-i18n="nav_join">Join Our Team</a></li>
+                    <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+                    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                    <li><a href="https://blackfinancialfreedom.com/terms--conditions">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 data-i18n="footer_contact">Contact Us</h3>
+                <p>Black Financial Freedom</p>
+                <p>Email: support@blackfinancialfreedom.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p data-i18n="footer_location">Location: Remote</p>
+            </div>
+
+            <div class="footer-column">
+                <img src="logo.webp" alt="Black Financial Freedom Logo" class="footer-logo">
+                <h3 data-i18n="footer_follow">Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/blackfinancialfreedom"><img class="icon-facebook"
+                            src="https://www.pngmart.com/files/23/Facebook-White-Logo-PNG-Pic.png" alt="Facebook" /></a>
+                    <a href="https://www.instagram.com/cassiablackef/"><img class="icon-instagram"
+                            src="https://www.pngmart.com/files/22/Black-And-White-Instagram-Logo-PNG-Isolated-Pic.png"
+                            alt="Instagram" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Black Financial Freedom. All rights reserved.</p>
+        </div>
     </footer>
+
     <script>
-  const fadeElements = document.querySelectorAll('.fade-up');
+        const translations = {
+            en: {
+                nav_home: "HOME",
+                nav_about: "ABOUT US",
+                nav_join: "JOIN OUR TEAM",
+                nav_services: "SERVICES",
+                nav_contact: "CONTACT US",
+                top_heading: "We help people protect their families and grow their financial wealth and get the most out of their RICH LIFE!",
+                top_paragraph: "Spend confidently on the things you love, and cut back on the things you don't. Discover the peace of mind that comes with having the right financial plan in place.",
+                build_heading: "Build a Solid Foundation!",
+                build_paragraph1: "Our modern financial solutions provide protection, security, and peace of mind for individuals and their loved ones.",
+                build_contact_heading: "Contact us today to get started.",
+                build_paragraph2: "At Black Financial Freedom Consulting, we specialize in securing the financial futures of middle-class families through living benefits insurance and strategic retirement planning via indexed accounts. Our mission is rooted in helping individuals achieve financial freedom while safeguarding their loved ones from financial uncertainty!",
+                vision_heading: "Our Vision",
+                vision_paragraph1: "Build a solid foundation for your financial future based on your objectives and your dreams!",
+                vision_join_heading: "Join Us",
+                vision_paragraph2: "Join us at Black Financial Freedom in securing your financial future and unlocking the endless possibilities it offers.",
+                learn_more_btn: "Learn More",
+                callout_heading: "Schedule an Appointment!",
+                callout_paragraph: "Here at Black Financial Freedom, we’re always looking for like-minded individuals. If you’re looking for a part-time (or full-time) job that gives you purpose in life and allows you geographic independence by working remotely.",
+                callout_button: "Contact Us",
+                footer_company: "Company",
+                footer_contact: "Contact Us",
+                footer_location: "Location: Remote",
+                footer_follow: "Follow Us"
+            },
+            pt: {
+                nav_home: "INÍCIO",
+                nav_about: "SOBRE NÓS",
+                nav_join: "JUNTE-SE À EQUIPE",
+                nav_services: "SERVIÇOS",
+                nav_contact: "CONTATE-NOS",
+                top_heading: "Ajudamos as pessoas a proteger suas famílias e aumentar sua riqueza financeira e aproveitar ao máximo sua VIDA RICA!",
+                top_paragraph: "Gaste com confiança nas coisas que você ama e economize nas que não ama. Descubra a paz de espírito com um plano financeiro adequado.",
+                build_heading: "Construa uma Base Sólida!",
+                build_paragraph1: "Nossas soluções financeiras modernas oferecem proteção, segurança e tranquilidade para indivíduos e suas famílias.",
+                build_contact_heading: "Entre em contato hoje mesmo para começar.",
+                build_paragraph2: "Na Black Financial Freedom Consulting, nos especializamos em garantir o futuro financeiro de famílias da classe média por meio de seguros com benefícios em vida e planejamento estratégico de aposentadoria com contas indexadas.",
+                vision_heading: "Nossa Visão",
+                vision_paragraph1: "Construa uma base sólida para o seu futuro financeiro com base em seus objetivos e sonhos!",
+                vision_join_heading: "Junte-se a nós",
+                vision_paragraph2: "Junte-se a nós na Black Financial Freedom para garantir seu futuro financeiro e desbloquear possibilidades ilimitadas.",
+                learn_more_btn: "Saiba Mais",
+                callout_heading: "Agende uma Consulta!",
+                callout_paragraph: "Na Black Financial Freedom, estamos sempre procurando pessoas com mentalidade semelhante. Se você procura um trabalho em meio período (ou período integral) com propósito e liberdade geográfica para trabalhar remotamente.",
+                callout_button: "Contate-Nos",
+                footer_company: "Empresa",
+                footer_contact: "Contate-Nos",
+                footer_location: "Local: Remoto",
+                footer_follow: "Siga-nos"
+            }
+        };
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target); // only animate once
-      }
-    });
-  }, {
-    threshold: 0.5 // Trigger when 20% visible
-  });
+        function setLanguage(lang) {
+            localStorage.setItem("selectedLang", lang);
+            location.reload();
+        }
 
-  fadeElements.forEach(el => observer.observe(el));
-</script>
+        function updateText() {
+            const lang = localStorage.getItem("selectedLang") || "en";
+            document.documentElement.lang = lang;
+            document.getElementById("current-lang").textContent = lang.toUpperCase();
+
+            // Update flag image source & alt text
+            const flagImg = document.getElementById("current-flag");
+            if (flagImg) { // Check if element exists before updating
+                if (lang === "pt") {
+                    flagImg.src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png";
+                    flagImg.alt = "Portuguese";
+                } else {
+                    flagImg.src = "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/330px-Flag_of_the_United_States.svg.png";
+                    flagImg.alt = "English";
+                }
+            }
+
+            // Update all translatable elements
+            document.querySelectorAll("[data-i18n]").forEach((el) => {
+                const key = el.getAttribute("data-i18n");
+                if (translations[lang][key]) {
+                    el.textContent = translations[lang][key];
+                }
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", updateText);
+    </script>
 
 </body>
 
