@@ -51,6 +51,70 @@ nav a:hover {
     color: #d4af37;
 }
 
+/* Dropdown container inside nav */
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown menu hidden by default */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #000;
+  min-width: 180px;
+  border: 1px solid #d4af37;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(212, 175, 55, 0.3);
+  z-index: 1000;
+  margin-top: 8px;
+  top: 100%;  /* right below */
+  left: 0;
+  margin-top: 0; /* no gap */
+
+
+}
+
+.services-link::after {
+  content: " ▼";
+  font-size: 1.0em;
+}
+
+/* Dropdown links style */
+.dropdown-menu a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for dropdown links */
+.dropdown-menu a:hover {
+  background-color: #d4af37;
+  color: #000;
+}
+
+/* Show dropdown menu on hover */
+.dropdown-container:hover .dropdown-menu {
+  display: block;
+}
+
+/* Style the services link */
+.services-link {
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+/* Hover effect for services link */
+.services-link:hover {
+  color: #d4af37;
+}
+
 .language-selector {
     position: fixed;
     /* fix position relative to viewport */
@@ -523,12 +587,16 @@ nav a:hover {
     margin-bottom: 5px;
 }
 
-.services-list div p {
+.services-list div a {
     font-weight: 700;
     font-size: 1.1rem;
     color: #fff;
+    text-decoration: none;
 }
 
+.services-list div a:hover {
+    color: #d4af37;
+}
 .learn-more-btn {
     padding: 8px 16px;
     background-color: #d4af37;
