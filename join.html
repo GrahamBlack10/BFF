@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About | Black Financial Freedom</title>
+    <title>Join | Black Financial Freedom</title>
     <link rel="stylesheet" href="about.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -19,15 +19,17 @@
             <a href="index.html" data-i18n="nav_home">HOME</a>
             <a href="about.html" data-i18n="nav_about">ABOUT US</a>
             <a href="join.html" data-i18n="nav_join">JOIN OUR TEAM</a>
-             <div class="dropdown-container">
-            <a href="services.html" class="services-link" data-i18n="nav_services">SERVICES ▼</a>
-            <div class="dropdown-menu">
-                <a href="living-benefits.html">Living Benefits</a>
-                <a href="tax-free-retirement.html">Tax-Free Retirement</a>
-                <a href="business-planning.html">Business Planning</a>
-                <a href="mortgage-protection.html">Mortgage Protection</a>
+            <div class="dropdown-container">
+                <a href="services.html" class="services-link" data-i18n="nav_services">SERVICES ▼</a>
+                <div class="dropdown-menu">
+                    <a href="living-benefits.html">Living Benefits</a>
+                    <a href="tax-free-retirement.html">Tax-Free Retirement</a>
+                    <a href="business-planning.html">Business Planning</a>
+                    <a href="mortgage-protection.html">Mortgage Protection</a>
+                    <a href="iul.html">IUL for Kids</a>
+                    <a href="annuities.html">Fixed Indexed Annuities</a>
+                </div>
             </div>
-        </div>
             <a href="contact.html" class="contact-button" data-i18n="nav_contact">CONTACT US</a>
         </nav>
 
@@ -74,14 +76,93 @@
         </section>
 
         <section class="join-form">
-            <h2>Apply Now</h2>
+            <h2>Work With Us</h2>
             <form action="https://formspree.io/f/your-form-id" method="POST">
-                <input type="text" name="name" placeholder="Your Full Name" required />
-                <input type="email" name="email" placeholder="Your Email Address" required />
-                <input type="tel" name="phone" placeholder="Your Phone Number" required />
-                <textarea name="message" placeholder="Tell us why you want to join..." rows="5" required></textarea>
+                <!-- Name -->
+                <label for="name">First and Last Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+
+                <!-- Year of Birth -->
+                <label for="birthYear">Year of Birth</label>
+                <input type="number" id="birthYear" name="birthYear" min="1900" max="2025" placeholder="e.g. 1990"
+                    required>
+
+                <!-- State -->
+                <label for="state">Which state do you live in?</label>
+                <input type="text" id="state" name="state" placeholder="e.g. California" required>
+
+                <!-- U.S. Citizen -->
+                <label>Are you a U.S. citizen?</label>
+                <label><input type="radio" name="usCitizen" value="Yes" required> Yes</label>
+                <label><input type="radio" name="usCitizen" value="No"> No</label>
+
+                <!-- Work Permit -->
+                <label>Do you have a work permit?</label>
+                <label><input type="radio" name="workPermit" value="Yes" required> Yes</label>
+                <label><input type="radio" name="workPermit" value="No"> No</label>
+
+                <!-- Time in USA -->
+                <label>How long have you been in the USA?</label>
+                <label><input type="radio" name="timeInUSA" value="More than 8 months" required> More than 8
+                    months</label>
+                <label><input type="radio" name="timeInUSA" value="Less than 8 months"> Less than 8 months</label>
+
+                <!-- Experience -->
+                <label for="experience">What professional experience have you had/do you currently have in the
+                    USA?</label>
+                <textarea id="experience" name="experience" rows="4" placeholder="Describe your experience..."
+                    required></textarea>
+
+                <!-- English Level -->
+                <label>What is your level of English?</label>
+                <label><input type="radio" name="englishLevel" value="Basic" required> Basic</label>
+                <label><input type="radio" name="englishLevel" value="Intermediate"> Intermediate</label>
+                <label><input type="radio" name="englishLevel" value="Advanced"> Advanced</label>
+
+                <!-- Spanish Level -->
+                <label>What is your level of Spanish?</label>
+                <label><input type="radio" name="spanishLevel" value="Basic" required> Basic</label>
+                <label><input type="radio" name="spanishLevel" value="Intermediate"> Intermediate</label>
+                <label><input type="radio" name="spanishLevel" value="Advanced"> Advanced</label>
+
+                <!-- Career Goals -->
+                <label>What are you looking for in this new career? (Select all that apply)</label>
+                <label><input type="checkbox" name="careerGoals" value="Work from home"> Work from home</label>
+                <label><input type="checkbox" name="careerGoals" value="Flexible hours"> Flexible hours</label>
+                <label><input type="checkbox" name="careerGoals" value="Geographic flexibility"> Geographic
+                    flexibility</label>
+                <label><input type="checkbox" name="careerGoals" value="Own my own business"> Own my own
+                    business</label>
+                <label><input type="checkbox" name="careerGoals" value="Spend more time with my family"> Spend more time
+                    with my family</label>
+                <label><input type="checkbox" name="careerGoals" value="Help people, I love serving others"> Help
+                    people, I love serving others</label>
+                <label><input type="checkbox" name="careerGoals" value="Increase my income"> Increase my income</label>
+
+                <!-- Financial Goal -->
+                <label>What is your initial monthly financial goal in this career?</label>
+                <select name="financialGoal" required>
+                    <option value="">--Select one--</option>
+                    <option value="$1,000.00 – $3,000.00">$1,000.00 – $3,000.00</option>
+                    <option value="$4,000.00 – $7,000.00">$4,000.00 – $7,000.00</option>
+                    <option value="$7,000.00 – $10,000.00">$7,000.00 – $10,000.00</option>
+                    <option value="$10,000.00+">$10,000.00+</option>
+                </select>
+
+                <!-- Hours Per Day -->
+                <label>How many hours per day will you commit to your new career?</label>
+                <select name="hoursPerDay" required>
+                    <option value="">--Select one--</option>
+                    <option value="2h – 4h">2h – 4h</option>
+                    <option value="4h – 6h">4h – 6h</option>
+                    <option value="6h – 8h">6h – 8h</option>
+                    <option value="More than 8h">More than 8h</option>
+                </select>
+
+                <!-- Submit -->
                 <button type="submit">Submit Application</button>
             </form>
+
         </section>
     </section>
 
