@@ -735,3 +735,444 @@ html {
   line-height: 1.6;
   color: #ffffff;
 }
+
+/* Living Benefits Section */
+#living-benefits {
+  background-color: #707070;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  padding: 60px 20px;
+}
+
+#living-benefits h2 {
+  font-size: 36px;
+  color: #d4af37;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#living-benefits p {
+  color: #ffffff;
+  font-size: 20px;
+  max-width: 900px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.text-gold {
+  color: #d4af37;
+  font-size: 20px;
+}
+
+.video-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.embed-responsive {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.1);
+}
+
+.embed-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+#insurance-comparison {
+  background-color: #111;
+  color: #fff;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+#insurance-comparison .section-title {
+  color: #d4af37;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#insurance-comparison .section-subtitle {
+  color: #ccc;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.comparison-table {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.comparison-table .row {
+  display: flex;
+  border-bottom: 1px solid #333;
+}
+
+.comparison-table .row.header {
+  background-color: #1a1a1a;
+  font-weight: bold;
+}
+
+.comparison-table .row.footer {
+  background-color: #1a1a1a;
+  font-weight: bold;
+}
+
+.comparison-table .cell {
+  flex: 1;
+  padding: 15px;
+  border-right: 1px solid #222;
+}
+
+.comparison-table .cell:last-child {
+  border-right: none;
+}
+
+.comparison-table .label {
+  text-align: left;
+  font-weight: bold;
+  color: #fff;
+}
+
+.comparison-table .check {
+  color: #4CAF50;
+  font-size: 20px;
+}
+
+.comparison-table .cross {
+  color: #F44336;
+  font-size: 20px;
+}
+
+.comparison-table .same-price {
+  color: #ccc;
+  font-size: 14px;
+}
+
+#insurance-comparison .btn-primary {
+  background-color: #d4af37;
+  color: #111;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  transition: background 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(212, 175, 55, 0.2);
+  cursor: pointer;
+  text-align: center;
+}
+
+#insurance-comparison .btn-primary:hover {
+  background-color: #c19e32;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s;
+  object-position: center;
+}
+
+#faq {
+  background-color: rgb(105, 105, 105);
+  color: #eee;
+  padding: 2rem 0;
+}
+
+#faq .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#faq h2 {
+  color: #e7bf3d;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#faq .faq-item {
+  border-bottom: 1px solid #333;
+  margin-bottom: 1.5rem;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 1rem 0;
+  cursor: pointer;
+  color: #d4af37;
+  transition: color 0.3s ease;
+}
+
+.faq-question:hover,
+.faq-question[aria-expanded="true"] {
+  color: #f0d97a;
+}
+
+.faq-answer {
+  padding-left: 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #f1f1f1;
+}
+
+.faq-answer ul {
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+}
+
+.faq-answer li {
+  margin-bottom: 0.5rem;
+}
+
+.faq-contact-link {
+  color: #d4af37;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.faq-contact-link:hover {
+  color: #f0d97a;
+  text-decoration: underline;
+}
+.horizontal-boxes {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.horizontal-boxes {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.py-5 {
+  padding: 60px 20px;
+  background-color: #0e0e0e;
+}
+
+.info-box {
+  flex: 1;
+  flex-basis: 300px;
+  max-width: 300px;
+  padding: 0 15px;
+  background: transparent;
+}
+
+.info-box h3 {
+  font-size: 1.25rem;
+  color: #d4af37;
+  margin-bottom: 12px;
+  margin-top: 25px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.info-box p {
+  color: #bbbbbb;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.btn.btn-clear {
+  padding: 8px 16px;
+  background-color: #d4af37;
+  color: #000000;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn.btn-clear:hover {
+  background-color: #9a821a;
+  color: #fff;
+}
+
+/* Mortgage Section */
+.mortgage-section {
+  padding: 60px 20px;
+  background-color: #5f5f5f;
+}
+
+.mortgage-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mortgage-text {
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+
+.mortgage-text h2 {
+  color: #d4af37;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.mortgage-text p {
+  color: #ffffff;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.mortgage-image {
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+
+.mortgage-image img {
+  width: 140%;
+  border-radius: 12px;
+  display: block;
+  height: auto;
+}
+
+.why-mortgage {
+  background-color: #c9c9c9;
+  color: #000000;
+  padding: 60px 20px;
+}
+
+.why-mortgage h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.why-mortgage .main-message p {
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  color: #000000;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.mortgage-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.mortgage-box {
+  background: rgba(109, 108, 108, 0.788);
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 400px;
+  flex: 1 1 300px;
+}
+
+.mortgage-box h3 {
+  font-size: 1.3rem;
+  margin: 15px 0 10px;
+  color: #fff;
+}
+
+.mortgage-box p {
+  color: #e2e0e0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.video-mortgage-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.video-mortgage-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Annuity Section */
+.section-annuity {
+  padding: 60px 20px;
+  background-color: #121212;
+}
+
+.annuity-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.annuity-box {
+  flex: 1;
+  min-width: 280px;
+  max-width: 360px;
+  background-color: #1f1f1f;
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+  color: #ccc;
+}
+
+.annuity-box h3 {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.annuity-box p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}

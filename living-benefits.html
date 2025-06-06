@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Living Benefits | Black Financial Freedom</title>
+    <link rel="stylesheet" href="about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo.webp" alt="Black Financial Freedom Logo" />
+        </div>
+        <nav>
+            <a href="index.html" data-i18n="nav_home">HOME</a>
+            <a href="about.html" data-i18n="nav_about">ABOUT US</a>
+            <a href="join.html" data-i18n="nav_join">JOIN OUR TEAM</a>
+            <div class="dropdown-container">
+                <a href="services.html" class="services-link" data-i18n="nav_services">SERVICES ▼</a>
+                <div class="dropdown-menu">
+                    <a href="living-benefits.html">Living Benefits</a>
+                    <a href="tax-free-retirement.html">Tax-Free Retirement</a>
+                    <a href="business-planning.html">Business Planning</a>
+                    <a href="mortgage-protection.html">Mortgage Protection</a>
+                    <a href="iul.html">IUL for Kids</a>
+                    <a href="annuities.html">Fixed Indexed Annuities</a>
+                </div>
+            </div>
+            <a href="contact.html" class="contact-button" data-i18n="nav_contact">CONTACT US</a>
+        </nav>
+
+        <div class="language-selector">
+            <button class="lang-btn">
+                <img id="current-flag"
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/330px-Flag_of_the_United_States.svg.png"
+                    alt="English" class="flag-icon" />
+                <span id="current-lang">EN</span> <span class="arrow">▼</span>
+            </button>
+            <div class="dropdown">
+                <a href="#" onclick="setLanguage('en')">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/330px-Flag_of_the_United_States.svg.png"
+                        alt="English" class="flag-icon" />
+                    English
+                </a>
+                <a href="#" onclick="setLanguage('pt')">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png"
+                        alt="Portuguese" class="flag-icon" />
+                    Portuguese
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <section id="living-benefits" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Living Benefits</h2>
+            <p class="mb-5">
+                Living Benefits provide financial protection while you're still alive. If you're diagnosed with a
+                critical, chronic, or terminal illness, you may be able to access a portion of your life insurance
+                policy while you're living.
+            </p>
+
+            <div class="video-wrapper mt-5">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://player.vimeo.com/video/319540567" class="embed-responsive-item" frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="insurance-comparison" class="py-5">
+        <div class="container text-center">
+            <h2 class="section-title mb-3">Do More With Your Life Insurance Policy.</h2>
+            <p class="section-subtitle mb-5">
+                More for the same price: Living Benefits give you more options, more flexibility, and more protection —
+                all for
+                the same price as an old-fashioned life insurance policy that only pays out if you die. It's a
+                no-brainer.
+            </p>
+
+            <div class="comparison-table">
+                <div class="row header">
+                    <div class="cell label">Pays Out Upon:</div>
+                    <div class="cell">Traditional Life Insurance</div>
+                    <div class="cell">Life Insurance with <br><strong>Living Benefits</strong></div>
+                </div>
+
+                <div class="row">
+                    <div class="cell label">Death</div>
+                    <div class="cell check">✔</div>
+                    <div class="cell check">✔</div>
+                </div>
+                <div class="row">
+                    <div class="cell label">Heart Attack</div>
+                    <div class="cell cross">✘</div>
+                    <div class="cell check">✔</div>
+                </div>
+                <div class="row">
+                    <div class="cell label">Stroke</div>
+                    <div class="cell cross">✘</div>
+                    <div class="cell check">✔</div>
+                </div>
+                <div class="row">
+                    <div class="cell label">Cancer</div>
+                    <div class="cell cross">✘</div>
+                    <div class="cell check">✔</div>
+                </div>
+                <div class="row">
+                    <div class="cell label">Blindness</div>
+                    <div class="cell cross">✘</div>
+                    <div class="cell check">✔</div>
+                </div>
+                <div class="row">
+                    <div class="cell label">Paralysis</div>
+                    <div class="cell cross">✘</div>
+                    <div class="cell check">✔</div>
+                </div>
+                <div class="row">
+                    <div class="cell label">Traumatic Brain Injury</div>
+                    <div class="cell cross">✘</div>
+                    <div class="cell check">✔</div>
+                </div>
+
+                <div class="row footer">
+                    <div class="cell"></div>
+                    <div class="cell same-price">At the Same Price</div>
+                    <div class="cell same-price">At the Same Price</div>
+                </div>
+            </div>
+
+            <a href="contact.html" class="btn btn-primary mt-4">See If You Qualify</a>
+        </div>
+    </section>
+
+
+    <section id="faq" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    How do Living Benefits Work?
+                </button>
+                <div class="faq-answer" hidden>
+                    <p>
+                        Once a qualifying health event has occurred on an active policy, a Living Benefits policy will
+                        allow the insured party to accelerate the death benefit, essentially allowing early access to
+                        the policy's death benefit at a discounted rate. That discount will vary depending on the
+                        severity of the illness or injury. The more impact the health condition had on the insured's
+                        life expectancy going forward, the more money they will be offered per given amount of death
+                        benefit.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    What is an example of a Living Benefits payout?
+                </button>
+                <div class="faq-answer" hidden>
+                    <p>
+                        For example, a client with a $500,000 Term policy who suffers a major, life-threatening cancer
+                        diagnosis may be offered $400,000 in exchange for accelerating their full $500,000 policy. On
+                        the other hand, a client who suffers a minor heart attack and whose prognosis is very positive
+                        may only be offered $100,000 in exchange for the full $500,000 acceleration. In all cases, it is
+                        the client's decision of whether to accept the offer and take the money or leave the full death
+                        benefit in place. In many cases, it's even possible for the client to accept a partial offer and
+                        get some money in their hands while leaving a portion of death benefit in place for the future.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    What is covered by Living Benefits?
+                </button>
+                <div class="faq-answer" hidden>
+                    <p>
+                        ABRs and triggers can vary widely between insurance carriers and products, so it's important to
+                        be educated on what riders are included in any Living Benefits policy you may be considering and
+                        know what conditions would qualify for a Living Benefits claim. The top Living Benefits products
+                        out there will offer all of the following ABRs and associated triggers at no extra premium cost:
+                    </p>
+                    <ul>
+                        <li><strong>Terminal Illness:</strong> 1-2 years expected to live</li>
+                        <li><strong>Chronic Illness:</strong> Unable to perform 2 of 6 activities of daily living OR
+                            severe cognitive impairment</li>
+                        <li><strong>Critical Illness:</strong> Cancer, heart attack, stroke, major organ transplant,
+                            kidney failure</li>
+                        <li><strong>Critical Injury:</strong> Paralysis, coma, major burns, severe brain injury</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    Why own Living Benefits?
+                </button>
+                <div class="faq-answer" hidden>
+                    <p>
+                        In this day and age, it always makes sense to have Living Benefits included as part of your life
+                        insurance policy. Compared to traditional life insurance, which only pays out the death benefit
+                        if you die, Living Benefits provide you with more options and more access to your policy's
+                        benefits in more scenarios. Any Living Benefits claim offer can always be declined if you wish,
+                        but having options is always better than not having options, especially after a major unexpected
+                        health event.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    How do I get Living Benefits?
+                </button>
+                <div class="faq-answer" hidden>
+                    <p>
+                        Living Benefits are kind of our thing. Reach out to us – we can connect you with our network of
+                        licensed Living Benefits experts who can audit any current coverage you have and make sure your
+                        family has the most modern and up-to-date coverage available.<br>
+                        <a href="contact.html" class="faq-contact-link">Contact us →</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="contact-box">
+        <h3>Scheduling a free, no-obligation conversation is quick and easy.</h3>
+        <a href="contact.html" class="contact-button">Contact Us</a>
+    </div>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 data-i18n="footer_company">Company</h3>
+                <ul>
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
+                    <li><a href="join.html" data-i18n="nav_join">Join Our Team</a></li>
+                    <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+                    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                    <li><a href="https://blackfinancialfreedom.com/terms--conditions">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 data-i18n="footer_contact">Contact Us</h3>
+                <p>Black Financial Freedom</p>
+                <p>Email: cassiablack18@gmail.com</p>
+                <p>Phone: (609) 815-5757</p>
+                <p data-i18n="footer_location">Location: New Jersey, USA</p>
+            </div>
+
+            <div class="footer-column">
+                <img src="logo.webp" alt="Black Financial Freedom Logo" class="footer-logo">
+                <h3 data-i18n="footer_follow">Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/blackfinancialfreedom"><img class="icon-facebook"
+                            src="https://www.pngmart.com/files/23/Facebook-White-Logo-PNG-Pic.png" alt="Facebook" /></a>
+                    <a href="https://www.instagram.com/cassiablackef/"><img class="icon-instagram"
+                            src="https://www.pngmart.com/files/22/Black-And-White-Instagram-Logo-PNG-Isolated-Pic.png"
+                            alt="Instagram" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Black Financial Freedom. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const expanded = button.getAttribute('aria-expanded') === 'true';
+                button.setAttribute('aria-expanded', !expanded);
+                const answer = button.nextElementSibling;
+                if (answer) {
+                    if (expanded) {
+                        answer.hidden = true;
+                    } else {
+                        answer.hidden = false;
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
