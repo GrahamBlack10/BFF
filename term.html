@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Terms & Conditions | Black Financial Freedom</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo img {
+            max-width: 220px;
+            height: auto;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .language-selector {
+            position: fixed;
+            /* fix position relative to viewport */
+            top: 10px;
+            /* distance from top */
+            left: 10px;
+            /* distance from left */
+            z-index: 10000;
+            /* make sure it stays on top */
+            display: inline-block;
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .lang-btn {
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            padding: 5px 10px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .flag-icon {
+            width: 20px;
+            height: 15px;
+        }
+
+        .arrow {
+            font-size: 12px;
+        }
+
+        /* Hide dropdown by default */
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            border: 1px solid #ccc;
+            min-width: 120px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+            border-radius: 0 0 4px 4px;
+        }
+
+        /* Show dropdown on hover */
+        .language-selector:hover .dropdown {
+            display: block;
+        }
+
+        /* Style dropdown links */
+        .dropdown a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .dropdown a:hover {
+            background-color: #f0f0f0;
+        }
+
+        .updated {
+            text-align: center;
+            font-size: 14px;
+            color: #ccc;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #d4af37;
+            font-size: 20px;
+            margin-top: 30px;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        ul {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        a {
+            color: #d4af37;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="language-selector">
+            <button class="lang-btn" aria-haspopup="true" aria-expanded="false" aria-controls="lang-dropdown">
+                <img id="current-flag"
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/330px-Flag_of_the_United_States.svg.png"
+                    alt="English" class="flag-icon" />
+                <span id="current-lang">EN</span> <span class="arrow">▼</span>
+            </button>
+            <div class="dropdown" id="lang-dropdown" role="menu" aria-label="Select Language">
+                <a href="#" role="menuitem" onclick="setLanguage('en'); return false;">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/330px-Flag_of_the_United_States.svg.png"
+                        alt="English" class="flag-icon" />
+                    English
+                </a>
+                <a href="#" role="menuitem" onclick="setLanguage('pt'); return false;">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png"
+                        alt="Portuguese" class="flag-icon" />
+                    Portuguese
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.webp" alt="Black Financial Freedom Logo" />
+        </div>
+
+        <div class="title" data-i18n="title">Terms & Conditions</div>
+        <div class="updated" data-i18n="last-updated">
+            <strong>Last Updated:</strong> 06/07/2025
+        </div>
+
+        <p data-i18n="intro">
+            Welcome to Black Financial Freedom ("Company," "we," "our," or "us"). By accessing or using our website
+            <strong>blackfinancialfreedom.com</strong> (the "Site"), you agree to comply with and be bound by these
+            Terms and Conditions ("Terms"). Please read them carefully before using our Site.
+        </p>
+
+        <h2 data-i18n="section-1-title">1. Acceptance of Terms</h2>
+        <p data-i18n="section-1-text">
+            By accessing or using our Site, you agree to be legally bound by these Terms and our Privacy Policy. If you
+            do not agree with any part of these Terms, you must not use our Site.
+        </p>
+
+        <h2 data-i18n="section-2-title">2. Changes to Terms</h2>
+        <p data-i18n="section-2-text">
+            We reserve the right to modify these Terms at any time. Changes will be effective immediately upon posting
+            on
+            the Site. Your continued use of the Site constitutes acceptance of the revised Terms.
+        </p>
+
+        <h2 data-i18n="section-3-title">3. Use of the Site</h2>
+        <p data-i18n="section-3-text">
+            You agree to use the Site only for lawful purposes and in accordance with these Terms. You must not:
+        </p>
+        <ul data-i18n="section-3-list">
+            <li>Violate any applicable laws or regulations.</li>
+            <li>Engage in fraudulent or deceptive activities.</li>
+            <li>Interfere with or disrupt the Site’s functionality.</li>
+            <li>Attempt to gain unauthorized access to any portion of the Site.</li>
+        </ul>
+
+        <h2 data-i18n="section-4-title">4. Collection of Information</h2>
+        <p data-i18n="section-4-text">
+            We collect information such as email, phone number, and full name in order to contact users. Users must
+            opt-in before we receive this information. By providing this information, you consent to being contacted by
+            us in accordance with our Privacy Policy.
+        </p>
+
+        <h2 data-i18n="section-5-title">5. Intellectual Property Rights</h2>
+        <p data-i18n="section-5-text">
+            All content on the Site, including text, graphics, logos, images, and software, is owned by or licensed to
+            the Company and is protected by intellectual property laws. You may not use, copy, distribute, or modify any
+            content without prior written consent from us.
+        </p>
+
+        <h2 data-i18n="section-6-title">6. User Accounts</h2>
+        <p data-i18n="section-6-text">
+            If you create an account on our Site, you are responsible for maintaining the confidentiality of your login
+            information. You agree to notify us immediately of any unauthorized use of your account. We are not liable
+            for any loss or damage resulting from unauthorized account access.
+        </p>
+
+        <h2 data-i18n="section-7-title">7. Limitation of Liability</h2>
+        <p data-i18n="section-7-text">
+            To the fullest extent permitted by law, the Company shall not be liable for any direct, indirect,
+            incidental,
+            special, or consequential damages arising from your use of the Site. This includes, but is not limited to,
+            damages for loss of data, revenue, or profits.
+        </p>
+
+        <h2 data-i18n="section-8-title">8. Third-Party Links</h2>
+        <p data-i18n="section-8-text">
+            The Site may contain links to third-party websites. We do not endorse or control these third-party sites and
+            are not responsible for their content or practices. Your use of third-party websites is at your own risk.
+        </p>
+
+        <h2 data-i18n="section-9-title">9. Termination</h2>
+        <p data-i18n="section-9-text">
+            We reserve the right to terminate or suspend your access to the Site at our sole discretion, without notice,
+            for any reason, including violation of these Terms.
+        </p>
+
+        <h2 data-i18n="section-10-title">10. Governing Law</h2>
+        <p data-i18n="section-10-text">
+            These Terms shall be governed and construed in accordance with the laws of
+            <strong>[Your Jurisdiction]</strong>, without regard to conflict of law principles.
+        </p>
+
+        <h2 data-i18n="section-11-title">11. Contact Information</h2>
+        <p data-i18n="section-11-text">
+            If you have any questions about these Terms, please contact us at
+            <a href="mailto:cassia@blackfinancialfreedom.com"
+                data-i18n="contact-email">cassia@blackfinancialfreedom.com</a>.
+        </p>
+
+    </div>
+    <footer>
+        <div class="container">
+            <p data-i18n="footer-text">© 2025 Black Financial Freedom. All rights reserved.</p>
+        </div>
+        <script>
+            // Translation object
+            const translations = {
+                en: {
+                    title: "Terms & Conditions",
+                    lastUpdated: "Last Updated: 06/07/2025",
+                    intro: "Welcome to Black Financial Freedom ('Company,' 'we,' 'our,' or 'us'). By accessing or using our website blackfinancialfreedom.us (the 'Site'), you agree to comply with and be bound by these Terms and Conditions ('Terms'). Please read them carefully before using our Site.",
+                    "section-1-title": "1. Acceptance of Terms",
+                    "section-1-text": "By accessing or using our Site, you agree to be legally bound by these Terms and our Privacy Policy. If you do not agree with any part of these Terms, you must not use our Site.",
+                    "section-2-title": "2. Changes to Terms",
+                    "section-2-text": "We reserve the right to modify these Terms at any time. Changes will be effective immediately upon posting on the Site. Your continued use of the Site constitutes acceptance of the revised Terms.",
+                    "section-3-title": "3. Use of the Site",
+                    "section-3-text": "You agree to use the Site only for lawful purposes and in accordance with these Terms. You must not:",
+                    "section-3-list": [
+                        "Violate any applicable laws or regulations.",
+                        "Engage in fraudulent or deceptive activities.",
+                        "Interfere with or disrupt the Site’s functionality.",
+                        " Attempt to gain unauthorized access to any portion of the Site."
+                    ],
+                    "section-4-title": "4. Collection of Information",
+                    "section-4-text": "We collect information such as email, phone number, and full name in order to contact users. Users must opt-in before we receive this information. By providing this information, you consent to being contacted by us in accordance with our Privacy Policy.",
+                    "section-5-title": "5. Intellectual Property Rights",
+                    "section-5-text": "All content on the Site, including text, graphics, logos, images, and software, is owned by or licensed to the Company and is protected by intellectual property laws. You may not use, copy, distribute, or modify any content without prior written consent from us.",
+                    "section-6-title": "6. User Accounts",
+                    "section-6-text": "If you create an account on our Site, you are responsible for maintaining the confidentiality of your login information. You agree to notify us immediately of any unauthorized use of your account. We are not liable for any loss or damage resulting from unauthorized account access.",
+                    "section-7-title": "7. Limitation of Liability",
+                    "section-7-text": "To the fullest extent permitted by law, the Company shall not be liable for any direct, indirect, incidental, special, or consequential damages arising from your use of the Site. This includes, but is not limited to, damages for loss of data, revenue, or profits.",
+                    "section-8-title": "8. Third-Party Links",
+                    "section-8-text": "The Site may contain links to third-party websites. We do not endorse or control these third-party sites and are not responsible for their content or practices. Your use of third-party websites is at your own risk.",
+                    "section-9-title": "9. Termination",
+                    "section-9-text": "We reserve the right to terminate or suspend your access to the Site at our sole discretion, without notice, for any reason, including violation of these Terms.",
+                    "section-10-title": "10. Governing Law",
+                    "section-10-text": "These Terms shall be governed and construed in accordance with the laws of [Your Jurisdiction], without regard to conflict of law principles.",
+                    "section-11-title": "11. Contact Information",
+                    "section-11-text": "If you have any questions about these Terms, please contact us at cassiablack18@gmail.com.",
+
+                },
+                pt: {
+                    title: "Termos e Condições",
+                    lastUpdated: "Última Atualização: 06/07/2025",
+                    intro: "Bem-vindo ao Black Financial Freedom ('Empresa', 'nós', 'nosso' ou 'nos'). Ao acessar ou usar nosso site blackfinancialfreedom.us (o 'Site'), você concorda em cumprir e estar vinculado a estes Termos e Condições ('Termos'). Por favor, leia-os atentamente antes de usar nosso Site.",
+                    "section-1-title": "1. Aceitação dos Termos",
+                    "section-1-text": "Ao acessar ou usar nosso Site, você concorda em estar legalmente vinculado a estes Termos e nossa Política de Privacidade. Se você não concordar com qualquer parte destes Termos, não deve usar nosso Site.",
+                    "section-2-title": "2. Alterações nos Termos",
+                    "section-2-text": "Reservamos o direito de modificar estes Termos a qualquer momento. As alterações serão efetivas imediatamente após a publicação no Site. Seu uso contínuo do Site constitui aceitação dos Termos revisados.",
+                    "section-3-title": "3. Uso do Site",
+                    "section-3-text": "Você concorda em usar o Site apenas para fins lícitos e de acordo com estes Termos. Você não deve:",
+                    "section-3-list": [
+                        "Violar quaisquer leis ou regulamentos aplicáveis.",
+                        "Engajar em atividades fraudulentas ou enganosas.",
+                        "Interferir ou interromper a funcionalidade do Site.",
+                        " Tentar obter acesso não autorizado a qualquer parte do Site."
+                    ],
+                    "section-4-title": "4. Coleta de Informações",
+                    "section-4-text": "Coletamos informações como email, número de telefone e nome completo para entrar em contato com os usuários. Os usuários devem optar por receber essas informações antes que as recebamos. Ao fornecer essas informações, você consente em ser contatado por nós de acordo com nossa Política de Privacidade.",
+                    "section-5-title": "5. Direitos de Propriedade Intelectual",
+                    "section-5-text": "Todo o conteúdo do Site, incluindo texto, gráficos, logotipos, imagens e software, é propriedade da Empresa ou licenciado para ela e é protegido por leis de propriedade intelectual. Você não pode usar, copiar, distribuir ou modificar qualquer conteúdo sem o consentimento prévio por escrito de nós.",
+                    "section-6-title": "6. Contas de Usuário",
+                    "section-6-text": "Se você criar uma conta em nosso Site, é responsável por manter a confidencialidade das suas informações de login. Você concorda em nos notificar imediatamente sobre qualquer uso não autorizado da sua conta. Não somos responsáveis por qualquer perda ou dano resultante do acesso não autorizado à conta.",
+                    "section-7-title": "7. Limitação de Responsabilidade",
+                    "section-7-text": "Na máxima extensão permitida por lei, a Empresa não será responsável por quaisquer danos diretos, indiretos, incidentais, especiais ou consequenciais decorrentes do seu uso do Site. Isso inclui, mas não se limita a, danos por perda de dados, receita ou lucros.",
+                    "section-8-title": "8. Links de Terceiros",
+                    "section-8-text": "O Site pode conter links para sites de terceiros. Não endossamos ou controlamos esses sites de terceiros e não somos responsáveis pelo seu conteúdo ou práticas. Seu uso de sites de terceiros é por sua conta e risco.",
+                    "section-9-title": "9. Rescisão",
+                    "section-9-text": "Reservamos o direito de rescindir ou suspender seu acesso ao Site a nosso critério exclusivo, sem aviso prévio, por qualquer motivo, incluindo violação destes Termos.",
+                    "section-10-title": "10. Lei Aplicável",
+                    "section-10-text": "Estes Termos serão regidos e interpretados de acordo com as leis de [Sua Jurisdição], sem considerar princípios de conflito de leis.",
+                    "section-11-title": "11. Informações de Contato",
+                    "section-11-text": "Se você tiver alguma dúvida sobre estes Termos, entre em contato conosco pelo email cassiablack18@gmail.com.",
+
+
+                }
+            };
+            const defaultLang = localStorage.getItem("lang") || "en";
+
+            function setLanguage(lang) {
+                localStorage.setItem("lang", lang);
+                translatePage(lang);
+                updateFlagAndLabel(lang);
+            }
+
+            function translatePage(lang) {
+                const elements = document.querySelectorAll("[data-i18n]");
+                elements.forEach(el => {
+                    const key = el.getAttribute("data-i18n");
+                    if (translations[lang] && translations[lang][key]) {
+                        el.textContent = translations[lang][key];
+                    }
+                });
+            }
+
+            function updateFlagAndLabel(lang) {
+                const flag = document.getElementById("current-flag");
+                const label = document.getElementById("current-lang");
+                if (lang === "pt") {
+                    flag.src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png";
+                    flag.alt = "Portuguese";
+                    label.textContent = "PT";
+                } else {
+                    flag.src = "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/330px-Flag_of_the_United_States.svg.png";
+                    flag.alt = "English";
+                    label.textContent = "EN";
+                }
+            }
+
+            // Load default language on page load
+            document.addEventListener("DOMContentLoaded", () => {
+                setLanguage(defaultLang);
+            });
+        </script>
+</body>
+
+</html>
