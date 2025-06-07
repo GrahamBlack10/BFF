@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-i18n="join_title">Join | Black Financial Freedom</title>
+    <link rel="stylesheet" href="about.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo.webp" alt="Black Financial Freedom Logo" data-i18n-alt="logo_alt" />
+        </div>
+        <nav>
+            <a href="index.html" data-i18n="nav_home">HOME</a>
+            <a href="about.html" data-i18n="nav_about">ABOUT US</a>
+            <a href="join.html" data-i18n="nav_join">JOIN OUR TEAM</a>
+            <div class="dropdown-container">
+                <a href="services.html" class="services-link" data-i18n="nav_services">SERVICES ▼</a>
+                <div class="dropdown-menu">
+                    <a href="living-benefits.html" data-i18n="nav_services_living_benefits">Living Benefits</a>
+                    <a href="tax-free-retirement.html" data-i18n="nav_services_tax_free_retirement">Tax-Free
+                        Retirement</a>
+                    <a href="business-planning.html" data-i18n="nav_services_business_planning">Business Planning</a>
+                    <a href="mortgage-protection.html" data-i18n="nav_services_mortgage_protection">Mortgage
+                        Protection</a>
+                    <a href="iul.html" data-i18n="nav_services_iul_for_kids">IUL for Kids</a>
+                    <a href="annuities.html" data-i18n="nav_services_fixed_indexed_annuities">Fixed Indexed
+                        Annuities</a>
+                </div>
+            </div>
+            <a href="contact.html" class="contact-button" data-i18n="nav_contact">CONTACT US</a>
+        </nav>
+
+        <div class="language-selector">
+            <button class="lang-btn">
+                <img id="current-flag"
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/330px-Flag_of_the_United_States.svg.png"
+                    alt="English" class="flag-icon" data-i18n-alt="lang_en_alt" />
+                <span id="current-lang" data-i18n="lang_en">EN</span> <span class="arrow">▼</span>
+            </button>
+            <div class="dropdown">
+                <a href="#" onclick="setLanguage('en')">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/330px-Flag_of_the_United_States.svg.png"
+                        alt="English" class="flag-icon" data-i18n-alt="lang_en_alt" />
+                    <span data-i18n="lang_en">English</span>
+                </a>
+                <a href="#" onclick="setLanguage('pt')">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png"
+                        alt="Portuguese" class="flag-icon" data-i18n-alt="lang_pt_alt" />
+                    <span data-i18n="lang_pt">Portuguese</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="join-main"
+        style="background: linear-gradient(135deg, rgba(85, 73, 22, 0.8), rgba(114, 114, 114, 0.8)), url('https://cdn11.bigcommerce.com/s-2t5fkq8mli/product_images/uploaded_images/family-double-piggyback-small.jpg') no-repeat center center/cover;">
+        <section class="join-hero">
+            <h1 data-i18n="join_hero_title">Get in Touch with Us</h1>
+            <p data-i18n="join_hero_text">Have questions or want to learn more about how we can help you build financial
+                freedom? Reach out—we’re here to help.</p>
+        </section>
+
+        <section class="join-benefits">
+            <h2 data-i18n="join_benefits_title">Why Contact Black Financial Freedom?</h2>
+            <ul>
+                <li data-i18n="join_benefits_li1">✅ Personalized financial guidance</li>
+                <li data-i18n="join_benefits_li2">✅ Help with insurance, annuities, and retirement planning</li>
+                <li data-i18n="join_benefits_li3">✅ No-cost consultations</li>
+                <li data-i18n="join_benefits_li4">✅ Support from licensed professionals</li>
+                <li data-i18n="join_benefits_li5">✅ Answers tailored to your unique needs</li>
+            </ul>
+        </section>
+
+        <section class="join-form">
+            <h2 data-i18n="join_form_title">Schedule A Consultation</h2>
+            <form action="https://formspree.io/f/xanjqboo" method="POST">
+                <label for="name" data-i18n="join_form_label_name">First and Last Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+                <label for="phone" data-i18n="join_form_label_phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required />
+
+                <label for="email" data-i18n="join_form_label_email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required />
+
+                <label for="state" data-i18n="join_form_label_state">Which state do you live in?</label>
+                <input type="text" id="state" name="state" placeholder="e.g. New Jersey" required />
+
+                <label for="family" data-i18n="join_form_label_family">Are you married? Do you have children?</label>
+                <input type="text" id="family" name="family" placeholder="e.g. Married with 2 children" required />
+
+                <label for="housing" data-i18n="join_form_label_housing">Do you own your home or pay rent?</label>
+                <input type="text" id="housing" name="housing" placeholder="Own / Rent" required />
+
+                <label for="arrival" data-i18n="join_form_label_arrival">When did you arrive in the United
+                    States?</label>
+                <input type="text" id="arrival" name="arrival" placeholder="Month and Year" required />
+
+                <label for="health" data-i18n="join_form_label_health">In the past 10 years, have you had any serious
+                    illness?</label>
+                <textarea id="health" name="health" rows="4" placeholder="Describe or write 'No' if none"
+                    required></textarea>
+
+                <button type="submit" data-i18n="join_form_button_submit">Submit</button>
+            </form>
+        </section>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 data-i18n="footer_company">Company</h3>
+                <ul>
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
+                    <li><a href="join.html" data-i18n="nav_join">Join Our Team</a></li>
+                    <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+                    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                    <li><a href="https://blackfinancialfreedom.com/terms--conditions" data-i18n="footer_terms">Terms &
+                            Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 data-i18n="footer_contact">Contact Us</h3>
+                <p data-i18n="footer_company_name">Black Financial Freedom</p>
+                <p>Email: cassiablack18@gmail.com</p>
+                <p>Phone: (609) 815-5757</p>
+                <p data-i18n="footer_location">Location: New Jersey, USA</p>
+            </div>
+
+            <div class="footer-column">
+                <img src="logo.webp" alt="Black Financial Freedom Logo" class="footer-logo" data-i18n-alt="logo_alt" />
+                <h3 data-i18n="footer_follow">Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/blackfinancialfreedom">
+                        <img class="icon-facebook"
+                            src="https://www.pngmart.com/files/23/Facebook-White-Logo-PNG-Pic.png" alt="Facebook"
+                            data-i18n-alt="social_facebook_alt" />
+                    </a>
+                    <a href="https://www.instagram.com/cassiablackef/">
+                        <img class="icon-instagram"
+                            src="https://www.pngmart.com/files/22/Black-And-White-Instagram-Logo-PNG-Isolated-Pic.png"
+                            alt="Instagram" data-i18n-alt="social_instagram_alt" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Black Financial Freedom. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        // Translation object
+        const translations = {
+            "en": {
+                "join_title": "Contact Us | Black Financial Freedom",
+                "logo_alt": "Black Financial Freedom Logo",
+                "nav_home": "HOME",
+                "nav_about": "ABOUT US",
+                "nav_join": "JOIN OUR TEAM",
+                "nav_services": "SERVICES ",
+                "nav_services_living_benefits": "Living Benefits",
+                "nav_services_tax_free_retirement": "Tax-Free Retirement",
+                "nav_services_business_planning": "Business Planning",
+                "nav_services_mortgage_protection": "Mortgage Protection",
+                "nav_services_iul_for_kids": "IUL for Kids",
+                "nav_services_fixed_indexed_annuities": "Fixed Indexed Annuities",
+                "nav_contact": "CONTACT US",
+                "lang_en_alt": "English",
+                "lang_en": "EN",
+                "lang_pt_alt": "Portuguese",
+                "lang_pt": "Portuguese",
+                "join_hero_title": "Get in Touch with Us",
+                "join_hero_text": "Have questions or want to learn more about how we can help you build financial freedom? Reach out—we’re here to help.",
+                "join_benefits_title": "Why Contact Black Financial Freedom?",
+                "join_benefits_li1": "✅ Personalized financial guidance",
+                "join_benefits_li2": "✅ Help with insurance, annuities, and retirement planning",
+                "join_benefits_li3": "✅ No-cost consultations",
+                "join_benefits_li4": "✅ Support from licensed professionals",
+                "join_benefits_li5": "✅ Answers tailored to your unique needs",
+                "join_form_title": "Schedule A Consultation",
+                "join_form_label_name": "First and Last Name",
+                "join_form_label_phone": "Phone Number",
+                "join_form_label_email": "Email",
+                "join_form_label_state": "Which state do you live in?",
+                "join_form_label_family": "Are you married? Do you have children?",
+                "join_form_label_housing": "Do you own your home or pay rent?",
+                "join_form_label_arrival": "When did you arrive in the United States?",
+                "join_form_label_health": "In the past 10 years, have you had any serious illness?",
+                "join_form_button_submit": "Submit",
+                "footer_company": "Company",
+                "footer_terms": "Terms & Conditions",
+                "footer_contact": "Contact Us",
+                "footer_company_name": "Black Financial Freedom",
+                "footer_location": "Location: New Jersey, USA",
+                "footer_follow": "Follow Us",
+                "social_facebook_alt": "Facebook",
+                "social_instagram_alt": "Instagram"
+            },
+            "pt": {
+                "join_title": "Contate-Nos | Liberdade Financeira Negra",
+                "logo_alt": "Logotipo da Liberdade Financeira Negra",
+                "nav_home": "INÍCIO",
+                "nav_about": "SOBRE NÓS",
+                "nav_join": "JUNTE-SE À NOSSA EQUIPE",
+                "nav_services": "SERVIÇOS ",
+                "nav_services_living_benefits": "Benefícios de Vida",
+                "nav_services_tax_free_retirement": "Aposentadoria Livre de Impostos",
+                "nav_services_business_planning": "Planejamento Empresarial",
+                "nav_services_mortgage_protection": "Proteção Hipotecária",
+                "nav_services_iul_for_kids": "IUL para Crianças",
+                "nav_services_fixed_indexed_annuities": "Anuidades Indexadas Fixas",
+                "nav_contact": "CONTATE-NOS",
+                "lang_en_alt": "Inglês",
+                "lang_en": "EN",
+                "lang_pt_alt": "Português",
+                "lang_pt": "PT",
+                "join_hero_title": "Entre em Contato Conosco",
+                "join_hero_text": "Tem perguntas ou deseja saber mais sobre como podemos ajudá-lo a construir liberdade financeira? Entre em contato - estamos aqui para ajudar.",
+                "join_benefits_title": "Por que entrar em contato com a Liberdade Financeira Negra?",
+                "join_benefits_li1": "✅ Orientação financeira personalizada",
+                "join_benefits_li2": "✅ Ajuda com seguros, anuidades e planejamento de aposentadoria",
+                "join_benefits_li3": "✅ Consultas sem custo",
+                "join_benefits_li4": "✅ Suporte de profissionais licenciados",
+                "join_benefits_li5": "✅ Respostas adaptadas às suas necessidades únicas",
+                "join_form_title": "Agende uma Consulta",
+                "join_form_label_name": "Nome e Sobrenome",
+                "join_form_label_phone": "Número de Telefone",
+                "join_form_label_email": "E-mail",
+                "join_form_label_state": "Em qual estado você mora?",
+                "join_form_label_family": "Você é casado(a)? Tem filhos?",
+                "join_form_label_housing": "Você possui sua casa ou paga aluguel?",
+                "join_form_label_arrival": "Quando você chegou aos Estados Unidos?",
+                "join_form_label_health": "Nos últimos 10 anos, você teve alguma doença grave?",
+                "join_form_button_submit": "Enviar",
+                "footer_company": "Empresa",
+                "footer_terms": "Termos e Condições",
+                "footer_contact": "Contate-Nos",
+                "footer_company_name": "Liberdade Financeira Negra",
+                "footer_location": "Localização: Nova Jersey, EUA",
+                "footer_follow": "Siga-nos",
+                "social_facebook_alt": "Facebook",
+                "social_instagram_alt": "Instagram"
+            }
+        };
+        function setLanguage(lang) {
+            localStorage.setItem("selectedLang", lang);
+            location.reload();
+        }
+
+        function updateText() {
+            const lang = localStorage.getItem("selectedLang") || "en";
+            document.documentElement.lang = lang;
+            document.getElementById("current-lang").textContent = lang.toUpperCase();
+
+            // Update flag image source & alt text
+            const flagImg = document.getElementById("current-flag");
+            if (flagImg) { // Check if element exists before updating
+                if (lang === "pt") {
+                    flagImg.src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png";
+                    flagImg.alt = "Portuguese";
+                } else {
+                    flagImg.src = "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/330px-Flag_of_the_United_States.svg.png";
+                    flagImg.alt = "English";
+                }
+            }
+
+            // Update all translatable elements
+            document.querySelectorAll("[data-i18n]").forEach((el) => {
+                const key = el.getAttribute("data-i18n");
+                if (translations[lang][key]) {
+                    el.textContent = translations[lang][key];
+                }
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", updateText);
+    </script>
+</body>
+
+</html>

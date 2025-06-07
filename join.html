@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Join | Black Financial Freedom</title>
-    <link rel="stylesheet" href="about.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-i18n="title_join">Join | Black Financial Freedom</title>
+    <link rel="stylesheet" href="about.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
@@ -22,12 +22,12 @@
             <div class="dropdown-container">
                 <a href="services.html" class="services-link" data-i18n="nav_services">SERVICES ▼</a>
                 <div class="dropdown-menu">
-                    <a href="living-benefits.html">Living Benefits</a>
-                    <a href="tax-free-retirement.html">Tax-Free Retirement</a>
-                    <a href="business-planning.html">Business Planning</a>
-                    <a href="mortgage-protection.html">Mortgage Protection</a>
-                    <a href="iul.html">IUL for Kids</a>
-                    <a href="annuities.html">Fixed Indexed Annuities</a>
+                    <a href="living-benefits.html" data-i18n="services_living_benefits">Living Benefits</a>
+                    <a href="tax-free-retirement.html" data-i18n="services_tax_free_retirement">Tax-Free Retirement</a>
+                    <a href="business-planning.html" data-i18n="services_business_planning">Business Planning</a>
+                    <a href="mortgage-protection.html" data-i18n="services_mortgage_protection">Mortgage Protection</a>
+                    <a href="iul.html" data-i18n="services_iul_for_kids">IUL for Kids</a>
+                    <a href="annuities.html" data-i18n="services_fixed_indexed_annuities">Fixed Indexed Annuities</a>
                 </div>
             </div>
             <a href="contact.html" class="contact-button" data-i18n="nav_contact">CONTACT US</a>
@@ -53,96 +53,114 @@
                 </a>
             </div>
         </div>
-
     </header>
 
     <section class="join-main">
         <section class="join-hero">
-            <h1>Join Our Financial Freedom Movement</h1>
-            <p>Become part of a thriving team helping families build generational wealth. Work with purpose, passion,
-                and
-                potential.</p>
+            <h1 data-i18n="join_hero_title">Join Our Financial Freedom Movement</h1>
+            <p data-i18n="join_hero_text">
+                Become part of a thriving team helping families build generational wealth. Work with purpose,
+                passion, and potential.
+            </p>
         </section>
 
         <section class="join-benefits">
-            <h2>Why Join Black Financial Freedom?</h2>
+            <h2 data-i18n="join_benefits_title">Why Join Black Financial Freedom?</h2>
             <ul>
-                <li>✅ Licensed Financial Agent Training & Support</li>
-                <li>✅ Work-from-anywhere Flexibility</li>
-                <li>✅ Mentorship from Proven Leaders</li>
-                <li>✅ Earn While You Learn</li>
-                <li>✅ A Mission That Matters</li>
+                <li data-i18n="join_benefit_1">✅ Licensed Financial Agent Training & Support</li>
+                <li data-i18n="join_benefit_2">✅ Work-from-anywhere Flexibility</li>
+                <li data-i18n="join_benefit_3">✅ Mentorship from Proven Leaders</li>
+                <li data-i18n="join_benefit_4">✅ Earn While You Learn</li>
+                <li data-i18n="join_benefit_5">✅ A Mission That Matters</li>
             </ul>
         </section>
 
         <section class="join-form">
-            <h2>Work With Us</h2>
+            <h2 data-i18n="join_form_title">Work With Us</h2>
             <form action="https://formspree.io/f/xrbkbnej" method="POST">
                 <!-- Name -->
-                <label for="name">First and Last Name</label>
-                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                <label for="name" data-i18n="form_label_name">First and Last Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Full Name"
+                    data-i18n-placeholder="form_placeholder_name" required />
 
                 <!-- Year of Birth -->
-                <label for="birthYear">Year of Birth</label>
+                <label for="birthYear" data-i18n="form_label_birthYear">Year of Birth</label>
                 <input type="number" id="birthYear" name="birthYear" min="1900" max="2025" placeholder="e.g. 1990"
-                    required>
+                    data-i18n-placeholder="form_placeholder_birthYear" required />
 
                 <!-- State -->
-                <label for="state">Which state do you live in?</label>
-                <input type="text" id="state" name="state" placeholder="e.g. California" required>
+                <label for="state" data-i18n="form_label_state">Which state do you live in?</label>
+                <input type="text" id="state" name="state" placeholder="e.g. California"
+                    data-i18n-placeholder="form_placeholder_state" required />
 
                 <!-- U.S. Citizen -->
-                <label>Are you a U.S. citizen?</label>
-                <label><input type="radio" name="usCitizen" value="Yes" required> Yes</label>
-                <label><input type="radio" name="usCitizen" value="No"> No</label>
+                <label data-i18n="form_label_usCitizen">Are you a U.S. citizen?</label>
+                <label><input type="radio" name="usCitizen" value="Yes" required /> <span
+                        data-i18n="form_option_yes">Yes</span></label>
+                <label><input type="radio" name="usCitizen" value="No" /> <span
+                        data-i18n="form_option_no">No</span></label>
 
                 <!-- Work Permit -->
-                <label>Do you have a work permit?</label>
-                <label><input type="radio" name="workPermit" value="Yes" required> Yes</label>
-                <label><input type="radio" name="workPermit" value="No"> No</label>
+                <label data-i18n="form_label_workPermit">Do you have a work permit?</label>
+                <label><input type="radio" name="workPermit" value="Yes" required /> <span
+                        data-i18n="form_option_yes">Yes</span></label>
+                <label><input type="radio" name="workPermit" value="No" /> <span
+                        data-i18n="form_option_no">No</span></label>
 
                 <!-- Time in USA -->
-                <label>How long have you been in the USA?</label>
-                <label><input type="radio" name="timeInUSA" value="More than 8 months" required> More than 8
-                    months</label>
-                <label><input type="radio" name="timeInUSA" value="Less than 8 months"> Less than 8 months</label>
+                <label data-i18n="form_label_timeInUSA">How long have you been in the USA?</label>
+                <label><input type="radio" name="timeInUSA" value="More than 8 months" required /> <span
+                        data-i18n="form_option_more_8_months">More than 8 months</span></label>
+                <label><input type="radio" name="timeInUSA" value="Less than 8 months" /> <span
+                        data-i18n="form_option_less_8_months">Less than 8 months</span></label>
 
                 <!-- Experience -->
-                <label for="experience">What professional experience have you had/do you currently have in the
-                    USA?</label>
+                <label for="experience" data-i18n="form_label_experience">What professional experience have you had/do
+                    you currently have in the USA?</label>
                 <textarea id="experience" name="experience" rows="4" placeholder="Describe your experience..."
-                    required></textarea>
+                    data-i18n-placeholder="form_placeholder_experience" required></textarea>
 
                 <!-- English Level -->
-                <label>What is your level of English?</label>
-                <label><input type="radio" name="englishLevel" value="Basic" required> Basic</label>
-                <label><input type="radio" name="englishLevel" value="Intermediate"> Intermediate</label>
-                <label><input type="radio" name="englishLevel" value="Advanced"> Advanced</label>
+                <label data-i18n="form_label_englishLevel">What is your level of English?</label>
+                <label><input type="radio" name="englishLevel" value="Basic" required /> <span
+                        data-i18n="form_option_basic">Basic</span></label>
+                <label><input type="radio" name="englishLevel" value="Intermediate" /> <span
+                        data-i18n="form_option_intermediate">Intermediate</span></label>
+                <label><input type="radio" name="englishLevel" value="Advanced" /> <span
+                        data-i18n="form_option_advanced">Advanced</span></label>
 
                 <!-- Spanish Level -->
-                <label>What is your level of Spanish?</label>
-                <label><input type="radio" name="spanishLevel" value="Basic" required> Basic</label>
-                <label><input type="radio" name="spanishLevel" value="Intermediate"> Intermediate</label>
-                <label><input type="radio" name="spanishLevel" value="Advanced"> Advanced</label>
+                <label data-i18n="form_label_spanishLevel">What is your level of Spanish?</label>
+                <label><input type="radio" name="spanishLevel" value="Basic" required /> <span
+                        data-i18n="form_option_basic">Basic</span></label>
+                <label><input type="radio" name="spanishLevel" value="Intermediate" /> <span
+                        data-i18n="form_option_intermediate">Intermediate</span></label>
+                <label><input type="radio" name="spanishLevel" value="Advanced" /> <span
+                        data-i18n="form_option_advanced">Advanced</span></label>
 
                 <!-- Career Goals -->
-                <label>What are you looking for in this new career? (Select all that apply)</label>
-                <label><input type="checkbox" name="careerGoals" value="Work from home"> Work from home</label>
-                <label><input type="checkbox" name="careerGoals" value="Flexible hours"> Flexible hours</label>
-                <label><input type="checkbox" name="careerGoals" value="Geographic flexibility"> Geographic
-                    flexibility</label>
-                <label><input type="checkbox" name="careerGoals" value="Own my own business"> Own my own
-                    business</label>
-                <label><input type="checkbox" name="careerGoals" value="Spend more time with my family"> Spend more time
-                    with my family</label>
-                <label><input type="checkbox" name="careerGoals" value="Help people, I love serving others"> Help
-                    people, I love serving others</label>
-                <label><input type="checkbox" name="careerGoals" value="Increase my income"> Increase my income</label>
+                <label data-i18n="form_label_careerGoals">What are you looking for in this new career? (Select all that
+                    apply)</label>
+                <label><input type="checkbox" name="careerGoals" value="Work from home" /> <span
+                        data-i18n="form_option_work_from_home">Work from home</span></label>
+                <label><input type="checkbox" name="careerGoals" value="Flexible hours" /> <span
+                        data-i18n="form_option_flexible_hours">Flexible hours</span></label>
+                <label><input type="checkbox" name="careerGoals" value="Geographic flexibility" /> <span
+                        data-i18n="form_option_geographic_flexibility">Geographic flexibility</span></label>
+                <label><input type="checkbox" name="careerGoals" value="Own my own business" /> <span
+                        data-i18n="form_option_own_business">Own my own business</span></label>
+                <label><input type="checkbox" name="careerGoals" value="Spend more time with my family" /> <span
+                        data-i18n="form_option_more_family_time">Spend more time with my family</span></label>
+                <label><input type="checkbox" name="careerGoals" value="Help people, I love serving others" /> <span
+                        data-i18n="form_option_help_people">Help people, I love serving others</span></label>
+                <label><input type="checkbox" name="careerGoals" value="Increase my income" /> <span
+                        data-i18n="form_option_increase_income">Increase my income</span></label>
 
                 <!-- Financial Goal -->
-                <label>What is your initial monthly financial goal in this career?</label>
+                <label data-i18n="form_label_financialGoal">What is your initial monthly financial goal in this
+                    career?</label>
                 <select name="financialGoal" required>
-                    <option value="">--Select one--</option>
+                    <option value="" data-i18n="form_select_placeholder">--Select one--</option>
                     <option value="$1,000.00 – $3,000.00">$1,000.00 – $3,000.00</option>
                     <option value="$4,000.00 – $7,000.00">$4,000.00 – $7,000.00</option>
                     <option value="$7,000.00 – $10,000.00">$7,000.00 – $10,000.00</option>
@@ -150,9 +168,10 @@
                 </select>
 
                 <!-- Hours Per Day -->
-                <label>How many hours per day will you commit to your new career?</label>
+                <label data-i18n="form_label_hoursPerDay">How many hours per day will you commit to your new
+                    career?</label>
                 <select name="hoursPerDay" required>
-                    <option value="">--Select one--</option>
+                    <option value="" data-i18n="form_select_placeholder">--Select one--</option>
                     <option value="2h – 4h">2h – 4h</option>
                     <option value="4h – 6h">4h – 6h</option>
                     <option value="6h – 8h">6h – 8h</option>
@@ -160,16 +179,16 @@
                 </select>
 
                 <!-- Submit -->
-                <button type="submit">Submit Application</button>
+                <button type="submit" data-i18n="form_button_submit">Submit Application</button>
             </form>
-
         </section>
     </section>
 
     <div class="contact-box">
-        <h3>Scheduling a free, no-obligation conversation is quick and easy.</h3>
-        <a href="contact.html" class="contact-button">Contact Us</a>
+        <h3 data-i18n="contact_box_text">Scheduling a free, no-obligation conversation is quick and easy.</h3>
+        <a href="contact.html" class="contact-button" data-i18n="contact_button">Contact Us</a>
     </div>
+
     <!-- Footer -->
     <footer class="site-footer">
         <div class="footer-container">
@@ -181,7 +200,8 @@
                     <li><a href="join.html" data-i18n="nav_join">Join Our Team</a></li>
                     <li><a href="services.html" data-i18n="nav_services">Services</a></li>
                     <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
-                    <li><a href="https://blackfinancialfreedom.com/terms--conditions">Terms & Conditions</a></li>
+                    <li><a href="https://blackfinancialfreedom.com/terms--conditions"
+                            data-i18n="footer_terms_conditions">Terms & Conditions</a></li>
                 </ul>
             </div>
 
@@ -194,7 +214,7 @@
             </div>
 
             <div class="footer-column">
-                <img src="logo.webp" alt="Black Financial Freedom Logo" class="footer-logo">
+                <img src="logo.webp" alt="Black Financial Freedom Logo" class="footer-logo" />
                 <h3 data-i18n="footer_follow">Follow Us</h3>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/blackfinancialfreedom"><img class="icon-facebook"
@@ -209,7 +229,167 @@
             <p>&copy; 2025 Black Financial Freedom. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        // Translation object
+        const translations = {
+            en: {
+                title_join: "Join | Black Financial Freedom",
+                nav_home: "HOME",
+                nav_about: "ABOUT US",
+                nav_join: "JOIN OUR TEAM",
+                nav_services: "SERVICES ",
+                nav_contact: "CONTACT US",
+                services_living_benefits: "Living Benefits",
+                services_tax_free_retirement: "Tax-Free Retirement",
+                services_business_planning: "Business Planning",
+                services_mortgage_protection: "Mortgage Protection",
+                services_iul_for_kids: "IUL for Kids",
+                services_fixed_indexed_annuities: "Fixed Indexed Annuities",
+                join_hero_title: "Join Our Financial Freedom Movement",
+                join_hero_text: "Become part of a thriving team helping families build generational wealth. Work with purpose, passion, and potential.",
+                join_benefits_title: "Why Join Black Financial Freedom?",
+                join_benefit_1: "✅ Licensed Financial Agent Training & Support",
+                join_benefit_2: "✅ Work-from-anywhere Flexibility",
+                join_benefit_3: "✅ Mentorship from Proven Leaders",
+                join_benefit_4: "✅ Earn While You Learn",
+                join_benefit_5: "✅ A Mission That Matters",
+                join_form_title: "Work With Us",
+                form_label_name: "First and Last Name",
+                form_placeholder_name: "Your Full Name",
+                form_label_birthYear: "Year of Birth",
+                form_placeholder_birthYear: "e.g. 1990",
+                form_label_state: "Which state do you live in?",
+                form_placeholder_state: "e.g. California",
+                form_label_usCitizen: "Are you a U.S. citizen?",
+                form_option_yes: "Yes",
+                form_option_no: "No",
+                form_label_workPermit: "Do you have a work permit?",
+                form_label_timeInUSA: "How long have you been in the USA?",
+                form_option_more_8_months: "More than 8 months",
+                form_option_less_8_months: "Less than 8 months",
+                form_label_experience: "What professional experience have you had/do you currently have in the USA?",
+                form_placeholder_experience: "Describe your experience...",
+                form_label_englishLevel: "What is your level of English?",
+                form_option_basic: "Basic",
+                form_option_intermediate: "Intermediate",
+                form_option_advanced: "Advanced",
+                form_label_spanishLevel: "What is your level of Spanish?",
+                form_label_careerGoals: "What are you looking for in this new career? (Select all that apply)",
+                form_option_work_from_home: "Work from home",
+                form_option_flexible_hours: "Flexible hours",
+                form_option_geographic_flexibility: "Geographic flexibility",
+                form_option_own_business: "Own my own business",
+                form_option_more_family_time: "Spend more time with my family",
+                form_option_help_people: "Help people, I love serving others",
+                form_option_increase_income: "Increase my income",
+                form_label_financialGoal: "What is your initial monthly financial goal in this career?",
+                form_select_placeholder: "--Select one--",
+                form_button_submit: "Submit Application",
+                contact_box_text: "Scheduling a free, no-obligation conversation is quick and easy.",
+                contact_button: "Contact Us",
+                footer_company: "Company",
+                footer_contact: "Contact Us",
+                footer_location: "Location: New Jersey, USA",
+                footer_terms_conditions: "Terms & Conditions",
+                footer_follow: "Follow Us",
+                footer_name: "Black Financial Freedom",
+            },
+            pt: {
+                title_join: "Junte-se | Liberdade Financeira Negra",
+                nav_home: "INÍCIO",
+                nav_about: "SOBRE NÓS",
+                nav_join: "JUNTE-SE À NOSSA EQUIPE",
+                nav_services: "SERVIÇOS",
+                nav_contact: "CONTATO",
+                services_living_benefits: "Benefícios em Vida",
+                services_tax_free_retirement: "Aposentadoria Livre de Impostos",
+                services_business_planning: "Planejamento Empresarial",
+                services_mortgage_protection: "Proteção Hipotecária",
+                services_iul_for_kids: "IUL para Crianças",
+                services_fixed_indexed_annuities: "Anuidades Indexadas Fixas",
+                join_hero_title: "Junte-se ao Nosso Movimento por Liberdade Financeira",
+                join_hero_text: "Faça parte de uma equipe próspera que ajuda famílias a construir riqueza geracional. Trabalhe com propósito, paixão e potencial.",
+                join_benefits_title: "Por Que Se Juntar à Liberdade Financeira Negra?",
+                join_benefit_1: "✅ Treinamento e Suporte para Agentes Financeiros Licenciados",
+                join_benefit_2: "✅ Flexibilidade para Trabalhar de Qualquer Lugar",
+                join_benefit_3: "✅ Mentoria de Líderes Experientes",
+                join_benefit_4: "✅ Ganhe Enquanto Aprende",
+                join_benefit_5: "✅ Uma Missão com Propósito",
+                join_form_title: "Trabalhe Conosco",
+                form_label_name: "Nome e Sobrenome",
+                form_placeholder_name: "Seu Nome Completo",
+                form_label_birthYear: "Ano de Nascimento",
+                form_placeholder_birthYear: "ex: 1990",
+                form_label_state: "Em qual estado você mora?",
+                form_placeholder_state: "ex: Califórnia",
+                form_label_usCitizen: "Você é cidadão dos EUA?",
+                form_option_yes: "Sim",
+                form_option_no: "Não",
+                form_label_workPermit: "Você tem permissão de trabalho?",
+                form_label_timeInUSA: "Há quanto tempo você está nos EUA?",
+                form_option_more_8_months: "Mais de 8 meses",
+                form_option_less_8_months: "Menos de 8 meses",
+                form_label_experience: "Qual experiência profissional você teve ou tem atualmente nos EUA?",
+                form_placeholder_experience: "Descreva sua experiência...",
+                form_label_englishLevel: "Qual é o seu nível de inglês?",
+                form_option_basic: "Básico",
+                form_option_intermediate: "Intermediário",
+                form_option_advanced: "Avançado",
+                form_label_spanishLevel: "Qual é o seu nível de espanhol?",
+                form_label_careerGoals: "O que você procura nesta nova carreira? (Selecione todas as opções que se aplicam)",
+                form_option_work_from_home: "Trabalhar de casa",
+                form_option_flexible_hours: "Horários flexíveis",
+                form_option_geographic_flexibility: "Flexibilidade geográfica",
+                form_option_own_business: "Ter meu próprio negócio",
+                form_option_more_family_time: "Passar mais tempo com minha família",
+                form_option_help_people: "Ajudar pessoas, adoro servir aos outros",
+                form_option_increase_income: "Aumentar minha renda",
+                form_label_financialGoal: "Qual é sua meta financeira mensal inicial nesta carreira?",
+                form_select_placeholder: "--Selecione uma opção--",
+                form_button_submit: "Enviar Inscrição",
+                contact_box_text: "Agendar uma conversa gratuita e sem compromisso é rápido e fácil.",
+                contact_button: "Fale Conosco",
+                footer_company: "Empresa",
+                footer_contact: "Fale Conosco",
+                footer_location: "Localização: Nova Jersey, EUA",
+                footer_terms_conditions: "Termos e Condições",
+                footer_follow: "Siga-nos",
+                footer_name: "Liberdade Financeira Negra"
+            }
+        };
+        function setLanguage(lang) {
+            localStorage.setItem("selectedLang", lang);
+            location.reload();
+        }
 
+        function updateText() {
+            const lang = localStorage.getItem("selectedLang") || "en";
+            document.documentElement.lang = lang;
+            document.getElementById("current-lang").textContent = lang.toUpperCase();
+
+            // Update flag image source & alt text
+            const flagImg = document.getElementById("current-flag");
+            if (flagImg) { // Check if element exists before updating
+                if (lang === "pt") {
+                    flagImg.src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png";
+                    flagImg.alt = "Portuguese";
+                } else {
+                    flagImg.src = "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/330px-Flag_of_the_United_States.svg.png";
+                    flagImg.alt = "English";
+                }
+            }
+
+            // Update all translatable elements
+            document.querySelectorAll("[data-i18n]").forEach((el) => {
+                const key = el.getAttribute("data-i18n");
+                if (translations[lang][key]) {
+                    el.textContent = translations[lang][key];
+                }
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", updateText);
+    </script>
 </body>
 
 </html>

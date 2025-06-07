@@ -55,6 +55,11 @@ nav .contact-button:hover {
   color: #fff;
 }
 
+.services-link::after {
+  content: " ▼";
+  font-size: 1.0em;
+}
+
 nav {
   margin-right: 15px;
   margin-top: 1px;
@@ -963,6 +968,7 @@ html {
   color: #f0d97a;
   text-decoration: underline;
 }
+
 .horizontal-boxes {
   display: flex;
   flex-direction: row;
@@ -978,6 +984,7 @@ html {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .py-5 {
   padding: 60px 20px;
   background-color: #0e0e0e;
@@ -1175,4 +1182,179 @@ html {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 20px;
+}
+
+/* Tablets and smaller laptops */
+@media (max-width: 992px) {
+
+  .mortgage-content,
+  .annuity-boxes {
+    justify-content: center;
+  }
+
+  .mortgage-text,
+  .mortgage-image,
+  .annuity-box {
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-width: auto;
+  }
+
+  .mortgage-image img {
+    max-width: 100%;
+  }
+}
+
+/* MOBILE RESPONSIVE CSS */
+@media (max-width: 768px) {
+
+  /* Header adjustments */
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+  }
+
+  .logo img {
+    height: 100px;
+    /* smaller logo on phone */
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  nav a {
+    margin: 8px 10px;
+    font-size: 1rem;
+  }
+
+  nav .contact-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  /* Mortgage Section */
+  .mortgage-section {
+    padding: 40px 15px;
+  }
+
+  .mortgage-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .mortgage-text,
+  .mortgage-image {
+    flex: none;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .mortgage-text h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  .mortgage-text p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  .mortgage-image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  /* Why Mortgage Section */
+  .why-mortgage {
+    padding: 40px 15px;
+  }
+
+  .why-mortgage h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .why-mortgage .main-message p {
+    font-size: 0.95rem;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .mortgage-grid {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 25px;
+  }
+
+  .mortgage-box {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .mortgage-box h3 {
+    font-size: 1.2rem;
+    margin: 10px 0 8px;
+  }
+
+  .mortgage-box p {
+    font-size: 0.9rem;
+  }
+
+  /* Video wrapper */
+  .video-mortgage-wrapper {
+    padding-bottom: 56.25%;
+    border-radius: 8px;
+    max-width: 100%;
+  }
+
+  /* Annuity Section */
+  .section-annuity {
+    padding: 40px 15px;
+  }
+
+  .annuity-boxes {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .annuity-box {
+    max-width: 100%;
+    padding: 20px 15px;
+  }
+
+  .annuity-box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .annuity-box p {
+    font-size: 0.95rem;
+  }
+
+  /* Buttons full width */
+  .btn,
+  .btn-clear,
+  .learn-more-btn,
+  .white-callout .callout-btn {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
 }

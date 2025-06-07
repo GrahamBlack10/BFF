@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>IUL | Black Financial Freedom</title>
+    <title data-i18n="title">IUL | Black Financial Freedom</title>
     <link rel="stylesheet" href="about.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -22,12 +22,12 @@
             <div class="dropdown-container">
                 <a href="services.html" class="services-link" data-i18n="nav_services">SERVICES ▼</a>
                 <div class="dropdown-menu">
-                    <a href="living-benefits.html">Living Benefits</a>
-                    <a href="tax-free-retirement.html">Tax-Free Retirement</a>
-                    <a href="business-planning.html">Business Planning</a>
-                    <a href="mortgage-protection.html">Mortgage Protection</a>
-                    <a href="iul.html">IUL for Kids</a>
-                    <a href="annuities.html">Fixed Indexed Annuities</a>
+                    <a href="living-benefits.html" data-i18n="nav_living_benefits">Living Benefits</a>
+                    <a href="tax-free-retirement.html" data-i18n="nav_tax_free_retirement">Tax-Free Retirement</a>
+                    <a href="business-planning.html" data-i18n="nav_business_planning">Business Planning</a>
+                    <a href="mortgage-protection.html" data-i18n="nav_mortgage_protection">Mortgage Protection</a>
+                    <a href="iul.html" data-i18n="nav_iul">IUL for Kids</a>
+                    <a href="annuities.html" data-i18n="nav_annuities">Fixed Indexed Annuities</a>
                 </div>
             </div>
             <a href="contact.html" class="contact-button" data-i18n="nav_contact">CONTACT US</a>
@@ -44,22 +44,21 @@
                 <a href="#" onclick="setLanguage('en')">
                     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/330px-Flag_of_the_United_States.svg.png"
                         alt="English" class="flag-icon" />
-                    English
+                    <span data-i18n="lang_en">English</span>
                 </a>
                 <a href="#" onclick="setLanguage('pt')">
                     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png"
                         alt="Portuguese" class="flag-icon" />
-                    Portuguese
+                    <span data-i18n="lang_pt">Portuguese</span>
                 </a>
             </div>
         </div>
-
     </header>
 
     <section id="living-benefits" class="py-5">
         <div class="container text-center">
-            <h2 class="mb-4">IUL for Kids: Building a Bright Future</h2>
-            <p class="mb-5">
+            <h2 class="mb-4" data-i18n="iul_title">IUL for Kids: Building a Bright Future</h2>
+            <p class="mb-5" data-i18n="iul_intro">
                 As parents, we all love and want what's best for our kids.
                 This includes wanting the best for their future financially.
             </p>
@@ -67,8 +66,7 @@
             <div class="video-wrapper mt-5">
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe src="https://player.vimeo.com/video/331851782" class="embed-responsive-item" frameborder="0"
-                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
-                    </iframe>
+                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -76,107 +74,90 @@
 
     <section id="faq" class="py-5" style="background-color: black;">
         <div class="container">
-            <h2 class="text-center mb-4">Why IUL?</h2>
+            <h2 class="text-center mb-4" data-i18n="iul_why_title">Why IUL?</h2>
 
             <div class="faq-item">
-                <button class="faq-question" aria-expanded="false">
+                <button class="faq-question" aria-expanded="false" data-i18n="iul_faq1_question">
                     Harness The Power of Compound Interest
                 </button>
                 <div class="faq-answer" hidden>
-                    <p>
-                        IUL allows parents to leverage the immense power of compound interest over time to grow their
-                        child's savings. By starting at a young age, parents can maximize the ability for that money to
-                        grow over the years. Even a small monthly contribution of $50-$150 per month can add up in a
-                        huge way by the time that child reaches adulthood.
+                    <p data-i18n="iul_faq1_answer">
+                        IUL allows parents to leverage the immense power of compound interest...
                     </p>
                 </div>
             </div>
 
             <div class="faq-item">
-                <button class="faq-question" aria-expanded="false">
+                <button class="faq-question" aria-expanded="false" data-i18n="iul_faq2_question">
                     Unique Tax Advantages
                 </button>
                 <div class="faq-answer" hidden>
-                    <p>
-                        IUL for Kids also offers tax advantages that can further enhance your child's financial growth.
-                        The cash value grows on a tax-deferred basis, meaning your child won't pay taxes on the growth
-                        as their policy is funded through the years . When the time comes, that cash value can be
-                        strategically accessed through participating loans, allowing them tax-free access to that cash
-                        value that is usually only seen in Roth IRAs or municipal bonds.
+                    <p data-i18n="iul_faq2_answer">
+                        IUL for Kids also offers tax advantages that can further enhance your child's financial
+                        growth...
                     </p>
                 </div>
             </div>
 
             <div class="faq-item">
-                <button class="faq-question" aria-expanded="false">
+                <button class="faq-question" aria-expanded="false" data-i18n="iul_faq3_question">
                     Locking In Lifetime Protection
                 </button>
                 <div class="faq-answer" hidden>
-                    <p>
-                        One welcome side effect of setting up IUL as a savings vehicle is the life insurance protection
-                        it establishes for your child at a young age, locking in their good health and establishing
-                        permanent coverage into adulthood. Our IUL plans even come with free Living Benefits features,
-                        which allow access to the life insurance portion of the plan if there is a serious illness or
-                        injury at any point in the insured's lifetime.
+                    <p data-i18n="iul_faq3_answer">
+                        One welcome side effect of setting up IUL as a savings vehicle is the life insurance
+                        protection...
                     </p>
                 </div>
             </div>
 
             <div class="faq-item">
-                <button class="faq-question" aria-expanded="false">
+                <button class="faq-question" aria-expanded="false" data-i18n="iul_faq4_question">
                     Teaching Financial Responsibility
                 </button>
                 <div class="faq-answer" hidden>
-                    <p>
-                        We believe in the importance of teaching financial responsibility from a young age. IUL for Kids
-                        can serve as an invaluable tool to help your child understand the fundamentals of saving,
-                        investing, and managing money. By actively involving them in the financial planning process,
-                        they can learn valuable life lessons that will set them up for success as they navigate
-                        adulthood.
+                    <p data-i18n="iul_faq4_answer">
+                        We believe in the importance of teaching financial responsibility from a young age...
                     </p>
                 </div>
             </div>
 
             <div class="faq-item">
-                <button class="faq-question" aria-expanded="false">
+                <button class="faq-question" aria-expanded="false" data-i18n="iul_faq5_question">
                     Expert Guidance Every Step of the Way
                 </button>
                 <div class="faq-answer" hidden>
-                    <p>
-                        Our team of experienced, licensed professionals is dedicated to guiding you through the process,
-                        answering your questions, and providing personalized solutions that align with your unique needs
-                        and goals.<br>
-                        <a href="contact.html" class="faq-contact-link">Reach out now →</a>
+                    <p data-i18n="iul_faq5_answer">
+                        Our team of experienced, licensed professionals is dedicated to guiding you through the
+                        process...
+                        <a href="contact.html" class="faq-contact-link" data-i18n="iul_contact_link">Reach out now →</a>
                     </p>
                 </div>
             </div>
-
         </div>
     </section>
 
     <section id="living-benefits" class="py-5">
         <div class="container text-center">
-            <h2 class="mb-4">Start investing today in your child's future.</h2>
-            <p class="mb-5">
-                One of the most compelling features of IUL for Kids is the opportunity for cash value accumulation.
-                Watch the video to learn more!
+            <h2 class="mb-4" data-i18n="iul_invest_title">Start investing today in your child's future.</h2>
+            <p class="mb-5" data-i18n="iul_invest_paragraph">
+                One of the most compelling features of IUL for Kids is the opportunity for cash value accumulation...
             </p>
 
             <div class="video-wrapper mt-5">
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe src="https://player.vimeo.com/video/268020148" class="embed-responsive-item" frameborder="0"
-                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
-                    </iframe>
+                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </section>
 
     <div class="contact-box">
-        <h3>Scheduling a free, no-obligation conversation is quick and easy.</h3>
-        <a href="contact.html" class="contact-button">Contact Us</a>
+        <h3 data-i18n="iul_contact_cta">Scheduling a free, no-obligation conversation is quick and easy.</h3>
+        <a href="contact.html" class="contact-button" data-i18n="nav_contact">Contact Us</a>
     </div>
-    <!-- Footer -->
+
     <footer class="site-footer">
         <div class="footer-container">
             <div class="footer-column">
@@ -187,15 +168,16 @@
                     <li><a href="join.html" data-i18n="nav_join">Join Our Team</a></li>
                     <li><a href="services.html" data-i18n="nav_services">Services</a></li>
                     <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
-                    <li><a href="https://blackfinancialfreedom.com/terms--conditions">Terms & Conditions</a></li>
+                    <li><a href="https://blackfinancialfreedom.com/terms--conditions" data-i18n="nav_terms">Terms &
+                            Conditions</a></li>
                 </ul>
             </div>
 
             <div class="footer-column">
                 <h3 data-i18n="footer_contact">Contact Us</h3>
-                <p>Black Financial Freedom</p>
-                <p>Email: cassiablack18@gmail.com</p>
-                <p>Phone: (609) 815-5757</p>
+                <p data-i18n="footer_name">Black Financial Freedom</p>
+                <p data-i18n="footer_email">Email: cassiablack18@gmail.com</p>
+                <p data-i18n="footer_phone">Phone: (609) 815-5757</p>
                 <p data-i18n="footer_location">Location: New Jersey, USA</p>
             </div>
 
@@ -212,9 +194,10 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Black Financial Freedom. All rights reserved.</p>
+            <p data-i18n="footer_copyright">&copy; 2025 Black Financial Freedom. All rights reserved.</p>
         </div>
     </footer>
+
     <script>
         document.querySelectorAll('.faq-question').forEach(button => {
             button.addEventListener('click', () => {
@@ -222,14 +205,131 @@
                 button.setAttribute('aria-expanded', !expanded);
                 const answer = button.nextElementSibling;
                 if (answer) {
-                    if (expanded) {
-                        answer.hidden = true;
-                    } else {
-                        answer.hidden = false;
-                    }
+                    answer.hidden = expanded;
                 }
             });
         });
+    </script>
+    <script>
+        // Translation object
+        const translations = {
+            "en": {
+                "title": "IUL | Black Financial Freedom",
+                "nav_home": "HOME",
+                "nav_about": "ABOUT US",
+                "nav_join": "JOIN OUR TEAM",
+                "nav_services": "SERVICES",
+                "nav_living_benefits": "Living Benefits",
+                "nav_tax_free_retirement": "Tax-Free Retirement",
+                "nav_business_planning": "Business Planning",
+                "nav_mortgage_protection": "Mortgage Protection",
+                "nav_iul": "IUL for Kids",
+                "nav_annuities": "Fixed Indexed Annuities",
+                "nav_contact": "CONTACT US",
+                "lang_en": "English",
+                "lang_pt": "Portuguese",
+                "iul_title": "IUL for Kids: Building a Bright Future",
+                "iul_intro": "As parents, we all love and want what's best for our kids. This includes wanting the best for their future financially.",
+                "iul_why_title": "Why IUL?",
+                "iul_faq1_question": "Harness The Power of Compound Interest",
+                "iul_faq1_answer": "IUL allows parents to leverage the immense power of compound interest over time to grow their child's savings. By starting at a young age, parents can maximize the ability for that money to grow over the years. Even a small monthly contribution of $50-$150 per month can add up in a huge way by the time that child reaches adulthood.",
+                "iul_faq2_question": "Unique Tax Advantages",
+                "iul_faq2_answer": "IUL for Kids also offers tax advantages that can further enhance your child's financial growth. The cash value grows on a tax-deferred basis, meaning your child won't pay taxes on the growth as their policy is funded through the years . When the time comes, that cash value can be strategically accessed through participating loans, allowing them tax-free access to that cash value that is usually only seen in Roth IRAs or municipal bonds.",
+                "iul_faq3_question": "Locking In Lifetime Protection",
+                "iul_faq3_answer": "One welcome side effect of setting up IUL as a savings vehicle is the life insurance protection it establishes for your child at a young age, locking in their good health and establishing permanent coverage into adulthood. Our IUL plans even come with free Living Benefits features, which allow access to the life insurance portion of the plan if there is a serious illness or injury at any point in the insured's lifetime.",
+                "iul_faq4_question": "Teaching Financial Responsibility",
+                "iul_faq4_answer": "We believe in the importance of teaching financial responsibility from a young age. IUL for Kids can serve as an invaluable tool to help your child understand the fundamentals of saving, investing, and managing money. By actively involving them in the financial planning process, they can learn valuable life lessons that will set them up for success as they navigate adulthood.",
+                "iul_faq5_question": "Expert Guidance Every Step of the Way",
+                "iul_faq5_answer": "Our team of experienced, licensed professionals is dedicated to guiding you through the process, answering your questions, and providing personalized solutions that align with your unique needs and goals.",
+                "iul_contact_link": "Reach out now →",
+                "iul_invest_title": "Start investing today in your child's future.",
+                "iul_invest_paragraph": "One of the most compelling features of IUL for Kids is the opportunity for cash value accumulation...",
+                "iul_contact_cta": "Scheduling a free, no-obligation conversation is quick and easy.",
+                "footer_company": "Company",
+                "footer_contact": "Contact Us",
+                "footer_name": "Black Financial Freedom",
+                "footer_email": "Email: cassiablack18@gmail.com",
+                "footer_phone": "Phone: (609) 815-5757",
+                "footer_location": "Location: New Jersey, USA",
+                "footer_follow": "Follow Us",
+                "footer_terms": "Terms & Conditions",
+                "footer_copyright": "© 2025 Black Financial Freedom. All rights reserved."
+            },
+            "pt": {
+                "title": "IUL | Liberdade Financeira Negra",
+                "nav_home": "INÍCIO",
+                "nav_about": "SOBRE NÓS",
+                "nav_join": "ENTRE PARA NOSSA EQUIPE",
+                "nav_services": "SERVIÇOS",
+                "nav_living_benefits": "Benefícios em Vida",
+                "nav_tax_free_retirement": "Aposentadoria Isenta de Impostos",
+                "nav_business_planning": "Planejamento Empresarial",
+                "nav_mortgage_protection": "Proteção Hipotecária",
+                "nav_iul": "IUL para Crianças",
+                "nav_annuities": "Anuidades Indexadas Fixas",
+                "nav_contact": "FALE CONOSCO",
+                "lang_en": "Inglês",
+                "lang_pt": "Português",
+                "iul_title": "IUL para Crianças: Construindo um Futuro Brilhante",
+                "iul_intro": "Como pais, todos amamos e queremos o melhor para nossos filhos. Isso inclui o melhor para o futuro financeiro deles.",
+                "iul_why_title": "Por Que IUL?",
+                "iul_faq1_question": "Aproveite o Poder dos Juros Compostos",
+                "iul_faq1_answer": "O IUL permite que os pais aproveitem o imenso poder dos juros compostos ao longo do tempo para fazer o dinheiro crescer. Começando desde cedo, os pais podem maximizar a capacidade de crescimento desse dinheiro ao longo dos anos. Mesmo uma pequena contribuição mensal de $50 a $150 pode se acumular de forma significativa quando a criança atingir a idade adulta.",
+                "iul_faq2_question": "Vantagens Fiscais Exclusivas",
+                "iul_faq2_answer": "O IUL para Crianças também oferece vantagens fiscais que podem aprimorar ainda mais o crescimento financeiro do seu filho. O valor em dinheiro cresce de forma diferida de impostos, o que significa que seu filho não pagará impostos sobre o crescimento enquanto a apólice for financiada ao longo dos anos. Quando chegar a hora, esse valor em dinheiro pode ser acessado estrategicamente por meio de empréstimos participativos, permitindo acesso isento de impostos a esse valor em dinheiro, algo geralmente visto apenas em IRAs Roth ou títulos municipais.",
+                "iul_faq3_question": "Proteção Vitalícia Garantida",
+                "iul_faq3_answer": "Um efeito colateral bem-vindo de configurar o IUL como um veículo de poupança é a proteção de seguro de vida que ele estabelece para seu filho desde cedo, garantindo sua boa saúde e estabelecendo cobertura permanente na idade adulta. Nossos planos IUL ainda vêm com recursos gratuitos de Benefícios em Vida, que permitem acessar a parte do seguro de vida do plano em caso de doença ou lesão grave em qualquer momento da vida do segurado.",
+                "iul_faq4_question": "Ensinar Responsabilidade Financeira",
+                "iul_faq4_answer": "Acreditamos na importância de ensinar responsabilidade financeira desde cedo. O IUL para Crianças pode servir como uma ferramenta inestimável para ajudar seu filho a entender os fundamentos de poupança, investimento e gestão de dinheiro. Ao envolvê-los ativamente no processo de planejamento financeiro, eles podem aprender lições valiosas que os prepararão para o sucesso na vida adulta.",
+                "iul_faq5_question": "Orientação Especializada em Cada Etapa",
+                "iul_faq5_answer": "Nossa equipe de profissionais experientes e licenciados está dedicada a guiá-lo durante todo o processo, respondendo às suas perguntas e fornecendo soluções personalizadas que se alinham com suas necessidades e objetivos únicos.",
+                "iul_contact_link": "Entre em contato agora →",
+                "iul_invest_title": "Comece a investir hoje no futuro do seu filho.",
+                "iul_invest_paragraph": "Uma das principais vantagens do IUL para Crianças é a oportunidade de acumulação de valor em dinheiro...",
+                "iul_contact_cta": "Agendar uma conversa gratuita e sem compromisso é rápido e fácil.",
+                "footer_company": "Empresa",
+                "footer_contact": "Fale Conosco",
+                "footer_name": "Liberdade Financeira Negra",
+                "footer_email": "Email: cassiablack18@gmail.com",
+                "footer_phone": "Telefone: (609) 815-5757",
+                "footer_location": "Localização: Nova Jersey, EUA",
+                "footer_follow": "Siga-nos",
+                "footer_terms": "Termos e Condições",
+                "footer_copyright": "© 2025 Liberdade Financeira Negra. Todos os direitos reservados."
+            }
+        };
+        function setLanguage(lang) {
+            localStorage.setItem("selectedLang", lang);
+            location.reload();
+        }
+
+        function updateText() {
+            const lang = localStorage.getItem("selectedLang") || "en";
+            document.documentElement.lang = lang;
+            document.getElementById("current-lang").textContent = lang.toUpperCase();
+
+            // Update flag image source & alt text
+            const flagImg = document.getElementById("current-flag");
+            if (flagImg) { // Check if element exists before updating
+                if (lang === "pt") {
+                    flagImg.src = "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png";
+                    flagImg.alt = "Portuguese";
+                } else {
+                    flagImg.src = "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/330px-Flag_of_the_United_States.svg.png";
+                    flagImg.alt = "English";
+                }
+            }
+
+            // Update all translatable elements
+            document.querySelectorAll("[data-i18n]").forEach((el) => {
+                const key = el.getAttribute("data-i18n");
+                if (translations[lang][key]) {
+                    el.textContent = translations[lang][key];
+                }
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", updateText);
     </script>
 </body>
 

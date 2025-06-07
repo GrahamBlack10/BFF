@@ -19,45 +19,44 @@
         <div class="logo">
             <img src="logo.webp" alt="Black Financial Freedom Logo" />
         </div>
-          <nav>
+        <nav>
             <a href="index.html" data-i18n="nav_home">HOME</a>
             <a href="about.html" data-i18n="nav_about">ABOUT US</a>
             <a href="join.html" data-i18n="nav_join">JOIN OUR TEAM</a>
             <div class="dropdown-container">
                 <a href="services.html" class="services-link" data-i18n="nav_services">SERVICES ▼</a>
                 <div class="dropdown-menu">
-                    <a href="living-benefits.html">Living Benefits</a>
-                    <a href="tax-free-retirement.html">Tax-Free Retirement</a>
-                    <a href="business-planning.html">Business Planning</a>
-                    <a href="mortgage-protection.html">Mortgage Protection</a>
-                    <a href="iul.html">IUL for Kids</a>
-                    <a href="annuities.html">Fixed Indexed Annuities</a>
+                    <a href="living-benefits.html" data-i18n="service_living_benefits">Living Benefits</a>
+                    <a href="tax-free-retirement.html" data-i18n="service_tax_free_retirement">Tax-Free Retirement</a>
+                    <a href="business-planning.html" data-i18n="service_business_planning">Business Planning</a>
+                    <a href="mortgage-protection.html" data-i18n="service_mortgage_protection">Mortgage Protection</a>
+                    <a href="iul.html" data-i18n="service_iul_for_kids">IUL for Kids</a>
+                    <a href="annuities.html" data-i18n="service_fixed_indexed_annuities">Fixed Indexed Annuities</a>
                 </div>
             </div>
             <a href="contact.html" class="contact-button" data-i18n="nav_contact">CONTACT US</a>
         </nav>
 
         <div class="language-selector">
-            <button class="lang-btn">
+            <button class="lang-btn" aria-haspopup="true" aria-expanded="false" aria-controls="lang-dropdown">
                 <img id="current-flag"
                     src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/330px-Flag_of_the_United_States.svg.png"
                     alt="English" class="flag-icon" />
                 <span id="current-lang">EN</span> <span class="arrow">▼</span>
             </button>
-            <div class="dropdown">
-                <a href="#" onclick="setLanguage('en')">
+            <div class="dropdown" id="lang-dropdown" role="menu" aria-label="Select Language">
+                <a href="#" role="menuitem" onclick="setLanguage('en'); return false;">
                     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/330px-Flag_of_the_United_States.svg.png"
                         alt="English" class="flag-icon" />
                     English
                 </a>
-                <a href="#" onclick="setLanguage('pt')">
+                <a href="#" role="menuitem" onclick="setLanguage('pt'); return false;">
                     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png"
                         alt="Portuguese" class="flag-icon" />
                     Portuguese
                 </a>
             </div>
         </div>
-
     </header>
 
     <!-- Top Box Section -->
@@ -77,20 +76,20 @@
 
     <section class="work-together-section">
         <div class="work-text">
-            <a href="#" class="learn-link">Learn more about me</a>
-            <h2><em>Let's work together!</em></h2>
-            <p>
+            <a href="#" class="learn-link" data-i18n="learn_more_about_me">Learn more about me</a>
+            <h2><em data-i18n="lets_work_together">Let's work together!</em></h2>
+            <p data-i18n="work_together_paragraph">
                 I am a dedicated and experienced financial professional ready to guide you on your financial journey.
                 Let's work together to build your future!
             </p>
-            <a href="about.html" class="btn">READ MORE</a>
+            <a href="about.html" class="btn" data-i18n="read_more">READ MORE</a>
         </div>
 
         <div class="profile-card">
-            <img src="WhatsApp Image 2025-05-29 at 14.05.08_98332c81.jpg" alt="Graham Black" class="profile-image" />
+            <img src="WhatsApp Image 2025-05-29 at 14.05.08_98332c81.jpg" alt="Cassia Black" class="profile-image" />
             <h2 class="profile-name">Cassia Black</h2>
-            <p class="profile-title">Founder & Financial Agent</p>
-            <p class="profile-company">Black Financial Freedom</p>
+            <p class="profile-title" data-i18n="profile_title">Founder & Financial Agent</p>
+            <p class="profile-company" data-i18n="profile_company">Black Financial Freedom</p>
         </div>
     </section>
 
@@ -114,9 +113,9 @@
 
     <section class="black-box">
         <div class="black-box-content">
-            <h2><em>Services we offer.</em></h2>
+            <h2><em data-i18n="services_we_offer">Services we offer.</em></h2>
             <hr class="gold-line" />
-            <p>
+            <p data-i18n="services_description">
                 Our expertise lies in helping clients create a robust and enduring financial foundation to build on into
                 the future.
                 For most people, this process begins with safeguarding what you already possess — your income,
@@ -129,27 +128,26 @@
 
             <div class="services-list">
                 <div>
-                    <small>Protect your family</small>
-                    <a href="living-benefits.html">Living Benefits</a>
+                    <small data-i18n="protect_family">Protect your family</small>
+                    <a href="living-benefits.html" data-i18n="living_benefits">Living Benefits</a>
                 </div>
                 <div>
-                    <small>Protect your future</small>
-                    <a href="tax-free-retirement.html">Tax-Free Retirement</a>
+                    <small data-i18n="protect_future">Protect your future</small>
+                    <a href="tax-free-retirement.html" data-i18n="tax_free_retirement">Tax-Free Retirement</a>
                 </div>
                 <div>
-                    <small>Protect your business</small>
-                    <a href="business-planning.html">Business Planning</a>
+                    <small data-i18n="protect_business">Protect your business</small>
+                    <a href="business-planning.html" data-i18n="business_planning">Business Planning</a>
                 </div>
                 <div>
-                    <small>Protect your home</small>
-                    <a href="mortgage-protection.html">Mortgage Protection</a>
+                    <small data-i18n="protect_home">Protect your home</small>
+                    <a href="mortgage-protection.html" data-i18n="mortgage_protection">Mortgage Protection</a>
                 </div>
             </div>
 
-            <a href="services.html" class="btn">Explore Services</a>
+            <a href="services.html" class="btn" data-i18n="explore_services">Explore Services</a>
         </div>
     </section>
-
 
     <section class="callout-wrapper">
         <div class="white-callout">
@@ -160,56 +158,71 @@
         </div>
     </section>
 
-
     <!-- How We've Helped Section -->
     <section class="how-weve-helped">
-        <h2>How We've Helped</h2>
-        <p style="text-align:center; max-width: 700px; margin: 0 auto 50px auto; color: #ccc;">
+        <h2 data-i18n="how_weve_helped_heading">How We've Helped</h2>
+        <p style="text-align:center; max-width: 700px; margin: 0 auto 50px auto; color: #ccc;"
+            data-i18n="how_weve_helped_intro">
             Don't just take our word for it! Learn about how Living Benefits have protected our real clients and their
             families.
         </p>
 
         <div class="stories-container">
             <div class="story-box">
-                <h3>"They didn't have Living Benefits back then."</h3>
-                <p>At the age of 25, Steve Smith was given a frightening diagnosis of stage four Hodgkin's disease.
+                <h3 data-i18n="story_1_title">"They didn't have Living Benefits back then."</h3>
+                <p data-i18n="story_1_paragraph_1">
+                    At the age of 25, Steve Smith was given a frightening diagnosis of stage four Hodgkin's disease.
                     Steve endured an aggressive treatment plan that included six months of chemotherapy and 13 radiation
                     treatments. During his treatment, Steve had no life insurance and Living Benefits did not exist,
-                    which resulted in significant emotional and financial stress.</p>
-                <p>Now, as a survivor, Steve emphasizes that up to 70% of the American population is either uninsured or
-                    underinsured, underscoring the need for proper life insurance coverage with Living Benefits.</p>
+                    which resulted in significant emotional and financial stress.
+                </p>
+                <p data-i18n="story_1_paragraph_2">
+                    Now, as a survivor, Steve emphasizes that up to 70% of the American population is either uninsured
+                    or
+                    underinsured, underscoring the need for proper life insurance coverage with Living Benefits.
+                </p>
                 <a href="https://www.youtube.com/watch?v=zxuNjNre2UY&list=PLCepT-jMjg0LqMgGRxL6wOoru36bCyoot&index=24"
-                    class="watch-story">Watch Steve's full story</a>
+                    class="watch-story" data-i18n="watch_story_1">Watch Steve's full story</a>
             </div>
 
             <div class="story-box">
-                <h3>"I tell everyone I know about Living Benefits."</h3>
-                <p>When busy mom and small business owner Natalia Oliveira began feeling pain in her back that wasn’t
+                <h3 data-i18n="story_2_title">"I tell everyone I know about Living Benefits."</h3>
+                <p data-i18n="story_2_paragraph_1">
+                    When busy mom and small business owner Natalia Oliveira began feeling pain in her back that wasn’t
                     going away, she went to the doctor to get it checked out. Cancer was the furthest thing from her
-                    mind.</p>
-                <p>Watch as Natalia shares the story of her diagnosis and ensuing battle with Hodgkins lymphoma. Her
+                    mind.
+                </p>
+                <p data-i18n="story_2_paragraph_2">
+                    Watch as Natalia shares the story of her diagnosis and ensuing battle with Hodgkins lymphoma. Her
                     Living Benefits life insurance policy kicked in to put $280,000 in her hands, saving her family and
-                    business from financial ruin.</p>
+                    business from financial ruin.
+                </p>
                 <a href="https://www.youtube.com/watch?v=M5ev6hQVeBo&list=PLCepT-jMjg0LqMgGRxL6wOoru36bCyoot&index=18"
-                    class="watch-story">Watch Natalia's full story</a>
+                    class="watch-story" data-i18n="watch_story_2">Watch Natalia's full story</a>
             </div>
 
             <div class="story-box">
-                <h3>"This is your future that you're thinking about."</h3>
-                <p>Latasha McCray had all of her ducks in a row - she was in perfect shape, had a great job and a
+                <h3 data-i18n="story_3_title">"This is your future that you're thinking about."</h3>
+                <p data-i18n="story_3_paragraph_1">
+                    Latasha McCray had all of her ducks in a row - she was in perfect shape, had a great job and a
                     financial plan for the future. But when a breast cancer diagnosis turned her world upside down,
-                    Latasha found all of her well-laid plans crumbling around her.</p>
-                <p>Watch as Latasha tells the story of how her Living Benefits life insurance plan sprung into action at
+                    Latasha found all of her well-laid plans crumbling around her.
+                </p>
+                <p data-i18n="story_3_paragraph_2">
+                    Watch as Latasha tells the story of how her Living Benefits life insurance plan sprung into action
+                    at
                     the time she needed it most, leaving her plenty of money to replace her lost income and pay for all
-                    of her medical treatments en route to a full recovery.</p>
-                <a href="https://www.youtube.com/watch?v=d8iVYeoECog" class="watch-story">Watch Latasha's full story</a>
+                    of her medical treatments en route to a full recovery.
+                </p>
+                <a href="https://www.youtube.com/watch?v=d8iVYeoECog" class="watch-story"
+                    data-i18n="watch_story_3">Watch Latasha's full story</a>
             </div>
         </div>
     </section>
 
     <div class="contact-box">
-        <h3>Scheduling a free, no-obligation conversation is quick and easy.</h3>
-        <a href="contact.html" class="contact-button">Contact Us</a>
+        <h3 data-i18n="contact_box_heading">Scheduling a free, no-obligation conversation is quick and easy.</h3>
+        <a href="contact.html" class="contact-button" data-i18n="contact_button">Contact Us</a>
     </div>
 
     <!-- Footer -->
@@ -223,7 +236,8 @@
                     <li><a href="join.html" data-i18n="nav_join">Join Our Team</a></li>
                     <li><a href="services.html" data-i18n="nav_services">Services</a></li>
                     <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
-                    <li><a href="https://blackfinancialfreedom.com/terms--conditions">Terms & Conditions</a></li>
+                    <li><a href="https://blackfinancialfreedom.com/terms--conditions" data-i18n="terms_conditions">Terms
+                            & Conditions</a></li>
                 </ul>
             </div>
 
@@ -236,7 +250,7 @@
             </div>
 
             <div class="footer-column">
-                <img src="logo.webp" alt="Black Financial Freedom Logo" class="footer-logo">
+                <img src="logo.webp" alt="Black Financial Freedom Logo" class="footer-logo" />
                 <h3 data-i18n="footer_follow">Follow Us</h3>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/blackfinancialfreedom"><img class="icon-facebook"
@@ -278,7 +292,50 @@
                 footer_company: "Company",
                 footer_contact: "Contact Us",
                 footer_location: "Location: New Jersey, USA",
-                footer_follow: "Follow Us"
+                footer_follow: "Follow Us",
+                learn_more_about_me: "Learn more about me",
+                lets_work_together: "Let's work together!",
+                work_together_paragraph: "I am a dedicated and experienced financial professional ready to guide you on your financial journey. Let's work together to build your future!",
+                read_more: "READ MORE",
+                profile_title: "Founder & Financial Agent",
+                profile_company: "Black Financial Freedom",
+                services_we_offer: "Services we offer.",
+                services_description: "Our expertise lies in helping clients create a robust and enduring financial foundation to build on into the future. For most people, this process begins with safeguarding what you already possess — your income, retirement savings, home, or perhaps even your own business. Together, we'll pave the path towards building a secure and prosperous financial future.",
+                protect_family: "Protect your family",
+                living_benefits: "Living Benefits",
+                protect_future: "Protect your future",
+                tax_free_retirement: "Tax-Free Retirement",
+                protect_business: "Protect your business",
+                business_planning: "Business Planning",
+                protect_home: "Protect your home",
+                mortgage_protection: "Mortgage Protection",
+                explore_services: "Explore Services",
+                how_weve_helped_heading: "How We've Helped",
+                how_weve_helped_intro: "Don't just take our word for it! Learn about how Living Benefits have protected our real clients and their families.",
+
+                story_1_title: "\"They didn't have Living Benefits back then.\"",
+                story_1_paragraph_1: "At the age of 25, Steve Smith was given a frightening diagnosis of stage four Hodgkin's disease. Steve endured an aggressive treatment plan that included six months of chemotherapy and 13 radiation treatments. During his treatment, Steve had no life insurance and Living Benefits did not exist, which resulted in significant emotional and financial stress.",
+                story_1_paragraph_2: "Now, as a survivor, Steve emphasizes that up to 70% of the American population is either uninsured or underinsured, underscoring the need for proper life insurance coverage with Living Benefits.",
+                watch_story_1: "Watch Steve's full story",
+
+                story_2_title: "\"I tell everyone I know about Living Benefits.\"",
+                story_2_paragraph_1: "When busy mom and small business owner Natalia Oliveira began feeling pain in her back that wasn’t going away, she went to the doctor to get it checked out. Cancer was the furthest thing from her mind.",
+                story_2_paragraph_2: "Watch as Natalia shares the story of her diagnosis and ensuing battle with Hodgkins lymphoma. Her Living Benefits life insurance policy kicked in to put $280,000 in her hands, saving her family and business from financial ruin.",
+                watch_story_2: "Watch Natalia's full story",
+
+                story_3_title: "\"This is your future that you're thinking about.\"",
+                story_3_paragraph_1: "Latasha McCray had all of her ducks in a row - she was in perfect shape, had a great job and a financial plan for the future. But when a breast cancer diagnosis turned her world upside down, Latasha found all of her well-laid plans crumbling around her.",
+                story_3_paragraph_2: "Watch as Latasha tells the story of how her Living Benefits life insurance plan sprung into action at the time she needed it most, leaving her plenty of money to replace her lost income and pay for all of her medical treatments en route to a full recovery.",
+                watch_story_3: "Watch Latasha's full story",
+                contact_box_heading: "Scheduling a free, no-obligation conversation is quick and easy.",
+                contact_button: "Contact Us",
+                terms_conditions: "Terms & Conditions",
+                service_living_benefits: "Living Benefits",
+                service_tax_free_retirement: "Tax-Free Retirement",
+                service_business_planning: "Business Planning",
+                service_mortgage_protection: "Mortgage Protection",
+                service_iul_for_kids: "IUL for Kids",
+                service_fixed_indexed_annuities: "Fixed Indexed Annuities"
             },
             pt: {
                 nav_home: "INÍCIO",
@@ -287,25 +344,66 @@
                 nav_services: "SERVIÇOS",
                 nav_contact: "CONTATE-NOS",
                 top_heading: "Ajudando você a aproveitar ao máximo a vida.",
-                top_paragraph: "Deixe-nos ajudar a proteger o futuro da sua família enquanto você se concentra em viver sua melhor vida. Descubra a tranquilidade que vem com ter o plano financeiro certo.",
+                top_paragraph: "Deixe-nos ajudar a proteger o futuro da sua família enquanto você se concentra em viver sua melhor vida. Descubra a tranquilidade que vem ao ter o plano financeiro ideal.",
                 build_heading: "Construa uma Base Sólida!",
-                build_paragraph1: "Nossas soluções financeiras modernas oferecem proteção, segurança e tranquilidade para indivíduos e suas famílias.",
+                build_paragraph1: "Nossas soluções financeiras modernas oferecem proteção, segurança e tranquilidade para você e seus entes queridos.",
                 build_contact_heading: "Entre em contato hoje mesmo para começar.",
-                build_paragraph2: "Na Black Financial Freedom Consulting, nos especializamos em garantir o futuro financeiro de famílias da classe média por meio de seguros com benefícios em vida e planejamento estratégico de aposentadoria com contas indexadas.",
+                build_paragraph2: "Na Black Financial Freedom Consulting, somos especialistas em garantir o futuro financeiro de famílias da classe média por meio de seguros com benefícios em vida e planejamento estratégico de aposentadoria com contas indexadas. Nossa missão é ajudar você a alcançar a liberdade financeira enquanto protege seus entes queridos da incerteza financeira!",
                 vision_heading: "Nossa Visão",
-                vision_paragraph1: "Construa uma base sólida para o seu futuro financeiro com base em seus objetivos e sonhos!",
+                vision_paragraph1: "Construa uma base sólida para seu futuro financeiro, baseada em seus objetivos e sonhos!",
                 vision_join_heading: "Junte-se a nós",
-                vision_paragraph2: "Junte-se a nós na Black Financial Freedom para garantir seu futuro financeiro e desbloquear possibilidades ilimitadas.",
+                vision_paragraph2: "Junte-se à Black Financial Freedom para garantir seu futuro financeiro e desbloquear possibilidades ilimitadas.",
                 learn_more_btn: "Saiba Mais",
                 service_btn: "Explore as Opções",
-                callout_heading: "Agende uma Consulta!",
-                callout_paragraph: "Na Black Financial Freedom, estamos sempre procurando pessoas com mentalidade semelhante. Se você procura um trabalho em meio período (ou período integral) com propósito e liberdade geográfica para trabalhar remotamente.",
+                callout_heading: "Venha Fazer Parte!",
+                callout_paragraph: "Aqui na Black Financial Freedom, estamos sempre buscando pessoas com a mesma mentalidade. Se você procura um trabalho de meio período (ou período integral) que dê propósito à sua vida e permita independência geográfica trabalhando remotamente, venha se juntar à nossa equipe.",
                 callout_button: "Junte-se à Equipe",
                 footer_company: "Empresa",
                 footer_contact: "Contate-Nos",
                 footer_location: "Localização: Nova Jersey, EUA",
-                footer_follow: "Siga-nos"
+                footer_follow: "Siga-nos",
+                learn_more_about_me: "Saiba mais sobre mim",
+                lets_work_together: "Vamos trabalhar juntos!",
+                work_together_paragraph: "Sou uma profissional financeira dedicada e experiente, pronta para guiá-lo em sua jornada financeira. Vamos trabalhar juntos para construir seu futuro!",
+                read_more: "LEIA MAIS",
+                profile_title: "Fundadora & Agente Financeira",
+                profile_company: "Black Financial Freedom",
+                services_we_offer: "Serviços que oferecemos.",
+                services_description: "Nossa especialidade é ajudar clientes a criar uma base financeira robusta e duradoura para construir o futuro. Para a maioria das pessoas, esse processo começa protegendo o que você já possui — sua renda, poupança para aposentadoria, casa ou até mesmo seu próprio negócio. Juntos, trilharemos o caminho para construir um futuro financeiro seguro e próspero.",
+                protect_family: "Proteja sua família",
+                living_benefits: "Benefícios em Vida",
+                protect_future: "Proteja seu futuro",
+                tax_free_retirement: "Aposentadoria Livre de Impostos",
+                protect_business: "Proteja seu negócio",
+                business_planning: "Planejamento Empresarial",
+                protect_home: "Proteja sua casa",
+                mortgage_protection: "Proteção de Hipoteca",
+                explore_services: "Explore os Serviços",
+                how_weve_helped_heading: "Como Ajudamos",
+                how_weve_helped_intro: "Não acredite apenas na nossa palavra! Saiba como os Benefícios em Vida protegeram nossos clientes reais e suas famílias.",
+                story_1_title: "\"Eles não tinham Benefícios em Vida naquela época.\"",
+                story_1_paragraph_1: "Com 25 anos, Steve Smith recebeu um diagnóstico assustador de doença de Hodgkin em estágio quatro. Steve passou por um tratamento agressivo que incluiu seis meses de quimioterapia e 13 sessões de radioterapia. Durante seu tratamento, Steve não tinha seguro de vida e Benefícios em Vida não existiam, o que resultou em estresse emocional e financeiro significativo.",
+                story_1_paragraph_2: "Agora, como sobrevivente, Steve enfatiza que até 70% da população americana está sem seguro ou com seguro insuficiente, ressaltando a necessidade de uma cobertura adequada de seguro de vida com Benefícios em Vida.",
+                watch_story_1: "Assista à história completa de Steve",
+                story_2_title: "\"Eu conto para todos que conheço sobre Benefícios em Vida.\"",
+                story_2_paragraph_1: "Quando a ocupada mãe e dona de um pequeno negócio Natalia Oliveira começou a sentir dores nas costas que não passavam, ela foi ao médico para investigar. O câncer era a última coisa em sua mente.",
+                story_2_paragraph_2: "Assista enquanto Natalia compartilha a história do seu diagnóstico e da batalha contra o linfoma de Hodgkin. Sua apólice de seguro de vida com Benefícios em Vida entrou em ação, colocando $280.000 em suas mãos, salvando sua família e negócio da ruína financeira.",
+                watch_story_2: "Assista à história completa de Natalia",
+                story_3_title: "\"Este é o futuro que você está pensando.\"",
+                story_3_paragraph_1: "Latasha McCray tinha tudo planejado — estava em perfeita forma, tinha um ótimo emprego e um plano financeiro para o futuro. Mas, quando um diagnóstico de câncer de mama virou seu mundo de cabeça para baixo, Latasha viu todos os seus planos desmoronarem.",
+                story_3_paragraph_2: "Assista enquanto Latasha conta como seu plano de seguro de vida com Benefícios em Vida entrou em ação no momento em que ela mais precisou, deixando-lhe dinheiro suficiente para substituir sua renda perdida e pagar por todos os tratamentos médicos rumo à recuperação total.",
+                watch_story_3: "Assista à história completa de Latasha",
+                contact_box_heading: "Agendar uma conversa gratuita e sem compromisso é rápido e fácil.",
+                contact_button: "Contate-Nos",
+                terms_conditions: "Termos & Condições",
+                service_living_benefits: "Benefícios em Vida",
+                service_tax_free_retirement: "Aposentadoria Livre de Impostos",
+                service_business_planning: "Planejamento Empresarial",
+                service_mortgage_protection: "Proteção de Hipoteca",
+                service_iul_for_kids: "IUL para Crianças",
+                service_fixed_indexed_annuities: "Anuidades Indexadas Fixas"
             }
+
         };
 
         function setLanguage(lang) {
